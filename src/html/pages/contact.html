@@ -1,0 +1,107 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+
+
+<main>
+    @@include('../layout/_breadcrumb.html', {
+        "breadcrumbText": "Contact Us"
+        })
+    
+    <!-- ==================== contact Start Here ==================== -->
+    <div class="contact-section py-60">
+        <div class="container">
+            <div class="contact-top">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-item__content">
+                                <h5 class="contact-item__title"> Our Address </h5>
+                                <p class="contact-item__desc"> 1012 Peb Parkway, Mirpur 2 </p>
+                                <p class="contact-item__desc"> Dhaka, Bangladesh </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="far fa-envelope"></i></div>
+                            <div class="contact-item__content">
+                                <h5 class="contact-item__title"> Email Address </h5>
+                                <p class="contact-item__desc"> examplte@gmail.com </p>
+                                <p class="contact-item__desc"> marketing@gmail.com </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-item">
+                            <div class="contact-item__icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-item__content">
+                                <h5 class="contact-item__title"> Phone Number </h5>
+                                <p class="contact-item__desc"> +008 01234458888 <br> +008 01234567777 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-bottom">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <h4 class="contact-form__title"> Contact With Us </h4>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-12 col-sm-6 form-group">
+                                        <label for="name" class="form--label label-two">First Name </label>
+                                        <input type="text" class="form--control" id="name">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-sm-6 form-group">
+                                        <label for="last" class="form--label  label-two"> Last Name </label>
+                                        <input type="text" class="form--control" id="last">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-sm-6 form-group">
+                                        <label for="email" class="form--label  label-two"> Email </label>
+                                        <input type="email" class="form--control" id="email">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-sm-6 form-group">
+                                        <label for="phone" class="form--label  label-two"> Phone Number </label>
+                                        <input type="number" class="form--control" id="phone">
+                                    </div>
+                                    <div class="col-sm-12 form-group">
+                                        <label for="sub" class="form--label  label-two"> Your Subject </label>
+                                        <input type="text" class="form--control" id="sub">
+                                    </div>
+                                    <div class="col-sm-12 form-group">
+                                        <label for="mes" class="form--label  label-two"> Message </label>
+                                        <textarea class="form--control" id="mes" cols="30" rows="10">Type your message..</textarea>
+                                    </div>
+                                </div>
+                                <div class="form--check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Default checkbox
+                                    </label>
+                                </div>
+                                <div class="contact-form__btn">
+                                    <button type="submit" class="btn btn--base">Submit Now <span class="icon"><i class="fa-solid fa-arrow-trend-up"></i></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-bottom__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41999.41805755069!2d2.3057498438385795!3d48.858903950403324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sbd!4v1715234651639!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== contact End Here ==================== -->
+
+</main>
+
+<!-- Footer -->
+@@include('../layout/_footer.html')
+@@include('../layout/_template-bottom.html')

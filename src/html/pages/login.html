@@ -1,0 +1,98 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../layout/_template-top.html')
+
+<!-- ================================= Account Section Start Here ============================ -->
+
+<section class="account">
+    <div class="account-inner">
+        <div class="account-inner__left">
+            <div class="account-thumb">
+                <img src="assets/images/thumbs/login-1.png" alt="">
+            </div>
+        </div>
+        <div class="account-inner__right">
+            <div class="account-form-wrapper">
+                <a href="index.html" class="account-form__logo">
+                    <img src="assets/images/logo/logo.png " alt="">
+                </a>
+                <form action="#" method="POST">
+                    <div class="account-form">
+
+                        <p class="text"> Welcome back </p>
+                        <h5 class="account-form__title"> Sign In Account </h5>
+                        <div class="social-login-wrapper">
+                            <p class="social-login-wrapper__title"> Sign In With Social Media </p>
+                            <ul class="social-login-list">
+                                <li class="social-login-list__item flex-grow-1">
+                                    <a href="#" class="w-100 social-login-btn">
+                                        <span class="social-login-btn__icon"> 
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="social-login-list__item flex-grow-1">
+                                    <a href="#" class="w-100 social-login-btn">
+                                        <span class="social-login-btn__icon"> 
+                                            <i class="fa-brands fa-google"></i>
+                                        </span>
+                                        Google
+                                    </a>
+                                </li>
+                                <li class="social-login-list__item flex-grow-1">
+                                    <a href="#" class="w-100 social-login-btn">
+                                        <span class="social-login-btn__icon"> 
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </span>
+                                        Linkedin
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="another-login">
+                                <span class="text"> or </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name" class="form--label"> Username </label>
+                                <input type="text" class="form--control form-two" placeholder="Username" id="name">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="your-password" class="form--label">Password</label>
+                                <div class="position-relative">
+                                    <input id="your-password" type="password" class="form-control form--control form-two"
+                                        value="Password">
+                                    <span class="password-show-hide fa-solid fa-eye-slash toggle-password"
+                                        id="#your-password"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <div class="flex-between">
+                                    <div class="form--check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Remember Me
+                                        </label>
+                                      </div>
+                                      <a href="#" class="forgot-password"> Forgot password? </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 form-group mt-4">
+                                <button type="submit" class="btn btn--base btn--lg w-100"> Sign In Account </button>
+                            </div>
+                        </div>
+                        <p class="account-form__text"> Don't have on account yet?  
+                            <a href="login.html" class="text--base">  Create Account </a>
+                       </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================================= Account Section End Here ============================ -->
+<!-- Footer -->
+
+@@include('../layout/_template-bottom.html')
