@@ -1,0 +1,90 @@
+/*============= product item css start here =============*/
+.product-item {
+    background-color: hsl(var(--white));
+    padding: 28px;
+    border-radius: 12px;
+    transition: .2s linear;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    &:hover {
+        .product-item__thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: fit-content;
+        line-height: 14px;
+        border-radius: 10px 0;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+        background-color: #efefef;
+        padding: 4px 10px;
+        line-height: 1;
+        z-index: 1;
+        color: hsl(var(--black));
+    }
+
+    &__title {
+        margin-bottom: 0px;
+    }
+
+    &__thumb {
+        max-width: 200px;
+        margin: 0 auto;
+        max-height: 180px;
+        height: 200px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            transition: .2s linear;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    &__bottom {
+        margin-top: auto;
+        padding-top: 10px;
+    }
+
+    &__price {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: hsl(var(--base));
+        justify-content: center;
+        font-size: rem(18px);
+        font-weight: 500;
+
+        &__old {
+            text-decoration: line-through;
+        }
+    }
+}
+
+/*=============== product item css end here =============*/

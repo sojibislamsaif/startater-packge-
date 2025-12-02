@@ -1,0 +1,187 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+<main>
+    @@include('../layout/_breadcrumb.html', {
+    "breadcrumbText": "Dashboard"
+    })
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    @@include('../sections/_sidebar-menu.html')
+                </div>
+                <div class="col-xl-9">
+                    <div class="dashboard-body">
+
+                        <div class="dashboard-topbar">
+                            <h5 class="dashboard-body__title mb-0"> Order Details - #CK-000124 </h5>
+                            <a class="btn btn--base btn--sm" target="_blank" href="#">
+                                <i class="las la-print"></i> Print Invoice
+                            </a>
+                        </div>
+
+                        <div class="row gy-4 mb-4">
+                            <!-- Order Overview -->
+                            <div class="col-md-6 col-xxl-4">
+                                <div class="card custom--card order-details--card h-100">
+                                    <div class="card-header">
+                                        <h6 class="card-title mb-0">Order Overview</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group--custom">
+                                            <li class="list-group-item">
+                                                <span class="label">Order No</span>
+                                                <span class="value">#CK-000124</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Order Date</span>
+                                                <span class="value">2025-12-02 06:11 PM</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Payment Method</span>
+                                                <span class="value">Online (Card)</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Order Status</span>
+                                                <span class="badge badge--warning">Preparing</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Payment Status</span>
+                                                <div class="badge badge--success">Paid</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order Summary -->
+                            <div class="col-md-6 col-xxl-4">
+                                <div class="card custom--card order-details--card h-100">
+                                    <div class="card-header">
+                                        <h6 class="card-title mb-0">Order Summary</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group--custom">
+                                            <li class="list-group-item">
+                                                <span class="label">Subtotal</span>
+                                                <span class="value">$32.50 USD</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">(+) Delivery Charge</span>
+                                                <span class="value">$3.00 USD</span>
+                                            </li>
+                                            <li class="list-group-item total">
+                                                <span class="label">Total</span>
+                                                <span class="value">$35.50 USD</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Delivery Information -->
+                            <div class="col-md-12 col-xxl-4">
+                                <div class="card custom--card order-details--card h-100">
+                                    <div class="card-header">
+                                        <h6 class="card-title mb-0">Delivery Information</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group--custom">
+                                            <li class="list-group-item">
+                                                <span class="label">Customer Name</span>
+                                                <span class="value">John Doe</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Phone</span>
+                                                <span class="value">+1 222 555 7788</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Delivery Address</span>
+                                                <span class="value">House #12, Road #4, City Town</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Delivery Type</span>
+                                                <span class="value">Home Delivery</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Estimated Time</span>
+                                                <span class="value">25–30 Minutes</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ordered Foods -->
+                        <div class="table-responsive">
+                            <table class="table table--responsive--lg">
+                                <thead>
+                                    <tr>
+                                        <th> Food Item </th>
+                                        <th> Price </th>
+                                        <th> Quantity </th>
+                                        <th> Total Price </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Item">
+                                            <div class="order-item">
+                                                <img class="order-item__thumb" src="assets/images/thumbs/category/fd-1.png"
+                                                    alt="Burger">
+                                                <div class="order-item__content">
+                                                    <h6 class="order-item__title">Cheese Beef Burger</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-label="Price"> $12.00 USD </td>
+                                        <td data-label="Quantity"> 1 </td>
+                                        <td data-label="Total Price"> $12.00 USD </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Item">
+                                            <div class="order-item">
+                                                <img class="order-item__thumb" src="assets/images/thumbs/category/fd-2.png"
+                                                    alt="Burger">
+                                                <div class="order-item__content">
+                                                    <h6 class="order-item__title">Chicken BBQ Pizza</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-label="Price"> $15.50 USD </td>
+                                        <td data-label="Quantity"> 1 </td>
+                                        <td data-label="Total Price"> $15.50 USD </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Item">
+                                            <div class="order-item">
+                                                <img class="order-item__thumb" src="assets/images/thumbs/category/fd-3.png"
+                                                    alt="Burger">
+                                                <div class="order-item__content">
+                                                    <h6 class="order-item__title">Cold Drink</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-label="Price"> $5.00 USD </td>
+                                        <td data-label="Quantity"> 1 </td>
+                                        <td data-label="Total Price"> $5.00 USD </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+
+<!-- Footer -->
+@@include('../layout/_template-bottom.html')

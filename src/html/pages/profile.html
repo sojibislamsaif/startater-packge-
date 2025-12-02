@@ -1,0 +1,195 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+<main>
+    @@include('../layout/_breadcrumb.html', {
+    "breadcrumbText": "Dashboard"
+    })
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    @@include('../sections/_sidebar-menu.html')
+                </div>
+                <div class="col-xl-9">
+                    <!-- Dashboard Body End -->
+                    <div class="dashboard-body">
+                        <div class="dashboard-body__bar d-xl-none d-block">
+                            <span class="dashboard-body__bar-icon"><i class="las la-filter"></i></span>
+                        </div>
+                        <div class="profile-wrapper">
+                            <div class="profile-wrapper__left">
+                                <div class="profile-wrapper__top">
+                                    <div class="profile-banner-thumb">
+                                        <img src="assets/images/thumbs/profile-bg.png" alt="">
+                                    </div>
+                                    <div class="profile-thumb">
+                                        <img src="assets/images/thumbs/profile-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile-info">
+                                    <h6 class="profile-info__title"> Personal Information </h6>
+                                    <ul class="profile-info-list">
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> Full Name </span>
+                                            <span class="text"> <span class="text-style">:</span> Martin Hook </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> Email </span>
+                                            <span class="text"> <span class="text-style">:</span> martinhook@gmail.com
+                                            </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> Country </span>
+                                            <span class="text"> <span class="text-style">:</span> USA </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> Phone </span>
+                                            <span class="text"> <span class="text-style">:</span> 088 787- 457 - 454
+                                            </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> City </span>
+                                            <span class="text"> <span class="text-style">:</span> New York </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> State </span>
+                                            <span class="text"> <span class="text-style">:</span> New York </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> Zip Code </span>
+                                            <span class="text"> <span class="text-style">:</span> 7845 </span>
+                                        </li>
+                                        <li class="profile-info-list__item">
+                                            <span class="title"> Address </span>
+                                            <span class="text"> <span class="text-style">:</span> 6391 Elgin St. Celina,
+                                                Delaware </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="profile-wrapper__right">
+                                <ul class="nav nav-pills custom--tab" id="pills-tabFour" role="tablist">
+                                    <li class="tab-bar"></li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-edit-tab" data-bs-toggle="pill" data-bs-target="#pills-edit" type="button" role="tab" aria-controls="pills-edit" aria-selected="true">Edit Profile </button>
+                                      </li>
+                                      <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-change-tab" data-bs-toggle="pill" data-bs-target="#pills-change" type="button" role="tab" aria-controls="pills-change" aria-selected="false">Change Password</button>
+                                      </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContentFour">
+                                    <div class="tab-pane fade show active" id="pills-edit" role="tabpanel"
+                                        aria-labelledby="pills-edit-tab" tabindex="0">
+                                        <form action="#">
+                                            <div class="profile-address-wrapper">
+                                                <span class="title"> Profile Image </span>
+                                                <div class="profile-address-wrapper__thumb">
+                                                    <div class="file-upload">
+                                                        <label class="edit" for="profile-image"><i
+                                                                class="las la-camera"></i></label>
+                                                        <input type="file" name="image"
+                                                            class="form-control form--control" id="profile-image"
+                                                            hidden="">
+                                                    </div>
+                                                    <div class="thumb">
+                                                        <img src="assets/images/thumbs/profile-1.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row gy-3">
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label for="fullname" class="form--label"> Fullname </label>
+                                                        <input type="text" class="form--control"
+                                                            placeholder="Martin Hook" id="fullname">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label for="mail" class="form--label"> Email </label>
+                                                        <input type="email" class="form--control"
+                                                            placeholder="martinhook@gmail.com" id="mail">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label class="form--label"> Country </label>
+                                                        <select class="form-select select2 form--control">
+                                                            <option selected> USA </option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label class="form--label"> Phone(Optional) </label>
+                                                        <div class="input-group">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"> 088 </span>
+                                                                <input type="number" class="form-control form--control"
+                                                                    placeholder="000 - 000 - 000">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label for="citythree" class="form--label"> City </label>
+                                                        <input type="text" class="form--control" placeholder="New York"
+                                                            id="citythree">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label for="state" class="form--label"> State</label>
+                                                        <input type="text" class="form--control" placeholder="New York"
+                                                            id="state">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label for="code" class="form--label"> Zip Code </label>
+                                                        <input type="number" class="form--control" placeholder="4543"
+                                                            id="code">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <label for="address" class="form--label"> Address </label>
+                                                        <input type="text" class="form--control"
+                                                            placeholder="6391 Elgin St. Celina, Delaware" id="address">
+                                                    </div>
+                                                    <div class="col-sm-12 mt-4">
+                                                        <button class="btn--base btn w-100"> Update Profile </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-change" role="tabpanel"
+                                        aria-labelledby="pills-change-tab" tabindex="0">
+                                        <form action="#">
+                                            <div class="row gy-3">
+                                                <div class="col-sm-12">
+                                                    <label for="your-password" class="form--label">Password</label>
+                                                    <div class="position-relative">
+                                                        <input id="your-password" type="password" class="form-control form--control" value="Password">
+                                                        <span class="password-show-hide fas fa-solid toggle-password fa-eye-slash" id="#your-password"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <label for="confirm-password" class="form--label">Confirm Password</label>
+                                                    <div class="position-relative">
+                                                        <input id="confirm-password" type="password" class="form-control form--control" value="Confirm Password">
+                                                        <div class="password-show-hide fas fa-solid toggle-password fa-eye-slash" id="#confirm-password"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 mt-4">
+                                                    <button class="btn--base btn w-100"> Change Password </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Dashboard Body End -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+
+<!-- Footer -->
+@@include('../layout/_template-bottom.html')

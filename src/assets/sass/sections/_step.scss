@@ -1,0 +1,36 @@
+/*============ step section start here ============*/
+
+.step-item {
+    --inner-p: 24px;
+    border-radius: 12px;
+    padding: var(--inner-p);
+    position: relative;
+    text-align: center;
+
+    &__icon {
+        --size: 60px;
+        width: var(--size);
+        height: var(--size);
+        color: hsl(var(--base));
+        margin-bottom: 24px;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.step-item__shape {
+    position: absolute;
+    right: -200px;
+    height: 30px;
+    width: 200px;
+    transform: translateX(-50%);
+    top: 45px;
+}
+.step-item__title {
+    margin-bottom: 12px;
+}
+.step-section__content div[class*="col-"]:last-child .step-item__shape {
+    display: none;
+}
+/*============ step section end here ============*/

@@ -1,0 +1,109 @@
+/*================ service section start here ================*/
+.service-section {
+    position: relative;
+    z-index: 1;
+    background-color: hsl(var(--base-two));
+
+    .shape-one {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .shape-two {
+        position: absolute;
+        top: 0;
+        left: 300px;
+    }
+
+    .shape-three {
+        position: absolute;
+        bottom: -90px;
+        left: 490px;
+    }
+    .shape-four {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .shape-five {
+        position: absolute;
+        top: 0;
+        right: 570px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .service-content {
+        &__title {
+            color: hsl(var(--white));
+        }
+
+        &__desc {
+            color: hsl(var(--white));
+        }
+
+        &__btn {
+            margin-top: 32px;
+        }
+    }
+
+    .service-thumb {}
+
+    .service-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: hsl(var(--white));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            color: hsl(var(--base));
+        }
+
+        &__text {
+            color: hsl(var(--white));
+        }
+    }
+}
+
+.service-section .service-list__icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: hsl(var(--white));
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 15px;
+    color: hsl(var(--base));
+}
+
+/*================ service section end here ================*/

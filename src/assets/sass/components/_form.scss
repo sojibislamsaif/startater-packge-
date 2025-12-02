@@ -48,7 +48,12 @@
   &:focus {
     border-color: hsl(var(--base));
   }
-
+  &.form-control {
+    &:focus {
+      border-color: hsl(var(--base));
+      box-shadow: none !important;
+    }
+  }
   &:disabled,
   &[readonly] {
     background-color: hsl(var(--black) / 0.2);

@@ -1,0 +1,784 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title> Html Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontasosome -->
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+  <!--==================== Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+            <div class="offcanvas border-0 offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-header">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-menu align-items-xl-center justify-content-xl-center w-100">
+                        <li class="nav-item d-xl-none">
+                            <div class="dropdown lang-box">
+                                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                                    <span class="thumb">
+                                        <img class="fit-image" src="assets/images/flags/us.png" alt="usa">
+                                    </span>
+                                    <span class="text">English</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="lang-box-item" data-code="en">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/us.png" alt="usa">
+                                            </div>
+                                            <span class="text">Enlish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item selected" data-code="hn">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/bd.png" alt="bd">
+                                            </div>
+                                            <span class="text">Bangla</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sp.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Spanish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sa.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Arabic</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/pak.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Urdu</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/fr.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">French</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog-details.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> Contact </a>
+                        </li>
+
+                        <li class="nav-item d-xl-none d-block">
+                            <a href="login.html" class="btn w-100 btn--md pill btn-outline--base">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-none">
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                Vehicles <span class="nav-item__icon"><i class="las la-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu header-dropdown">
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#"> Car </a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#"> Convertible </a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Electric</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Motorcycle</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#-vehicle_1717237170">Specialty
+                                        Vehicle</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">SUV</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Truck</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Van</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-right d-none d-xl-flex">
+                <div class="dropdown lang-box">
+                    <button class="lang-box-btn" data-bs-toggle="dropdown">
+                        <span class="thumb">
+                            <img class="fit-image" src="assets/images/thumbs/s-1.jpg" alt="en">
+                        </span>
+                        <span class="text">English</span>
+                        <span class="icon">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="lang-box-item" data-code="en">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-1.jpg" alt="en">
+                                </div>
+                                <span class="text">Enlish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item selected" data-code="hn">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-4.jpg" alt="en">
+                                </div>
+                                <span class="text">Bangla</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-3.jpg" alt="en">
+                                </div>
+                                <span class="text">Spanish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-2.jpg" alt="hi">
+                                </div>
+                                <span class="text">Hindi</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <a href="" class="cart-action-btn">
+                    <i class="las la-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="btn btn--base btn--md">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<!--================ cart-sidebar start here ================ -->
+<div class="cart__sidebar">
+    <div class="cart__header">
+        <div>
+            <h6 class="title mb-0">
+                <!-- Cart Icon + Total Items -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M19.875 9.375H4.125C3.50368 9.375 3 9.87868 3 10.5C3 11.1213 3.50368 11.625 4.125 11.625H19.875C20.4963 11.625 21 11.1213 21 10.5C21 9.87868 20.4963 9.375 19.875 9.375Z"
+                        fill="currentColor" />
+                    <path
+                        d="M7.96101 8.62501L9.78876 6.60488C9.94851 6.42638 10.0288 6.20513 10.0288 5.98388C10.0288 5.73188 9.92413 5.48288 9.72426 5.30138C9.34626 4.96013 8.76201 4.98788 8.42076 5.36588L5.47363 8.62501H7.96138H7.96101Z"
+                        fill="currentColor" />
+                    <path
+                        d="M16.0386 8.62501H18.5263L15.5792 5.36588C15.2379 4.98788 14.6537 4.96013 14.2757 5.30138C14.0758 5.48288 13.9712 5.73188 13.9712 5.98388C13.9712 6.20513 14.0511 6.42676 14.2112 6.60488L16.0386 8.62501Z"
+                        fill="currentColor" />
+                    <path
+                        d="M4.57422 12.375L6.12784 18.1147C6.34834 18.9304 7.09272 19.5 7.93759 19.5H16.0627C16.9076 19.5 17.652 18.9304 17.8725 18.1147L19.4261 12.375H4.57422Z"
+                        fill="currentColor" />
+                </svg>
+                04 items
+            </h6>
+            <a href="cart.html" class="cart__page__link">Show in Cart Page</a>
+        </div>
+        <div>
+            <button class="sidebar-close-btn"><i class="las la-times"></i></button>
+        </div>
+    </div>
+
+    <div class="cart__body">
+
+        <!-- Item 1 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-1.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Chicken Fried Rice
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$6.99</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Main Dish</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="2" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-2.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Beef Burger Deluxe
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$4.49</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Fast Food</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="1" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-3.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Spicy Chicken Wings (6 pcs)
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$5.99</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Snacks</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="1" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-4.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Chicken Shawarma Wrap
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$3.99</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Wrap</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="1" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-bottom">
+        <div class="subtotal-price">
+            <span class="subtotal-title">Total</span>
+            <span class="subtotal-price">$27.46</span>
+        </div>
+        <a href="checkout.html" class="checkout-btn">
+            Checkout <i class="las la-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<!--================ cart-sidebar end here ================ -->
+
+
+<main>
+    <!-- ==================== Breadcrumb Start Here ==================== -->
+<section class="breadcrumb bg-img" data-background-image="assets/images/thumbs/bread-1.jpg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="breadcrumb__wrapper">
+                    <h2 class="breadcrumb__title"> Checkout</h2>
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link"> Home</a> </li>
+                        <li class="breadcrumb__item"><i class="fas fa-angle-right"></i></li>
+                        <li class="breadcrumb__item"> <span class="breadcrumb__item-text"> Checkout </span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== Breadcrumb End Here ==================== -->
+
+    <!--============ checkout section start here ============ -->
+    <div class="checkout-section my-60">
+        <div class="container">
+            <div class="checkout-wrapper">
+                <div class="cart-wrapper__left">
+                    <div class="cart-body">
+                        <h4 class="cart-header__title mb-4">
+                            Shopping Address
+                        </h4>
+                        <form action="#" method="POST">
+                            <input type="hidden" name="_token" value="dOSA79pm1oCu27wmmX5HqH1j8YgEbuf1jnqEyJKJ"
+                                autocomplete="off">
+                            <div class="row gy-3">
+                                <div class="col-lg-6">
+                                    <label class="form--label">First Name</label>
+                                    <input type="text" class="form-control form--control" value="User" name="firstname"
+                                        required="" id="firstname">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label class="form--label required" for="lastname">Last Name</label>
+                                    <input type="text" class="form-control form--control" value="Name" name="lastname"
+                                        required="" id="lastname">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label class="form--label required">Email</label>
+                                    <input type="email" class="form-control form--control" value="user@site.com"
+                                        name="email" required="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class="form--label required"> Country </label>
+                                    <select class="form-select form--control select2">
+                                        <option selected>Country</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form--label required">Mobile</label>
+                                    <div class="input-group input--group">
+                                        <span class="input-group-text mobile-code">+93</span>
+                                        <input type="hidden" name="mobile_code" value="93">
+                                        <input type="hidden" name="country_code" value="AF">
+                                        <input type="number" name="mobile" value="456454545"
+                                            class="form-control form--control checkUser" required="">
+                                    </div>
+                                    <small class="text--danger mobileExist"></small>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form--label" for="city">City</label>
+                                    <input type="text" value="Cum voluptatem et e" class="form-control form--control"
+                                        name="city" id="city">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form--label" for="zip">Zip Code</label>
+                                    <input type="text" value="57166" class="form-control form--control" name="zip"
+                                        id="zip">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form--label" for="state">State</label>
+                                    <input type="text" value="Esse aut consectetur" class="form-control form--control"
+                                        name="state" id="state">
+
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form--label" for="address">Address</label>
+                                    <textarea class="form-control form--control" name="address"
+                                        id="address">Temporibus dolore vo</textarea>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <label class="form--label required"> Shipping Zone </label>
+                                    <select class="form-select form--control select2">
+                                        <option selected>Select Shipping Zone </option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="shipping-method-wrapper">
+                                    <div class="form-check form--radio flex-grow-1">
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios1" value="option1" checked="">
+                                            <div class="shipping-content">
+                                                <div class="shipping-content__left">
+                                                    <h5 class="title mb-2">Free Shipping </h5>
+                                                    <span>25-30 Mins</span>
+                                                </div>
+                                                <div class="shipping-content__right">
+                                                    <h5 class="amount mb-0">$120</h5>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form--radio flex-grow-1">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios2" value="option1">
+                                            <div class="shipping-content">
+                                                <div class="shipping-content__left">
+                                                    <h5 class="title mb-2">Express Shipping </h5>
+                                                    <span>10-15 Mins</span>
+                                                </div>
+                                                <div class="shipping-content__right">
+                                                    <h5 class="amount mb-0">$9</h5>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn--base w-100">Place Order</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="cart-wrapper__right">
+                    <div class="checkout-information">
+                        <h5 class="title mb-4">Your Cart</h5>
+                        <div class="checkout-product__wrapper">
+
+                            <!-- Item 1 -->
+                            <div class="checkout-product__item">
+                                <div class="checkout-product__item__thumb">
+                                    <img src="assets/images/thumbs/category/fd-2.png" alt="">
+                                </div>
+                                <div class="checkout-product__item__right">
+                                    <div class="checkout-product__item__content">
+                                        <h6 class="title mb-1">Chicken Fried Rice</h6>
+                                        <p class="tag">Main Dish</p>
+                                    </div>
+                                    <h5 class="price mb-0">$6.99</h5>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="checkout-product__item">
+                                <div class="checkout-product__item__thumb">
+                                    <img src="assets/images/thumbs/category/fd-3.png" alt="">
+                                </div>
+                                <div class="checkout-product__item__right">
+                                    <div class="checkout-product__item__content">
+                                        <h6 class="title mb-1">Beef Burger Deluxe</h6>
+                                        <p class="tag">Fast Food</p>
+                                    </div>
+                                    <h5 class="price mb-0">$4.49 <br><small>including tax</small></h5>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="checkout-product__item">
+                                <div class="checkout-product__item__thumb">
+                                    <img src="assets/images/thumbs/category/fd-4.png" alt="">
+                                </div>
+                                <div class="checkout-product__item__right">
+                                    <div class="checkout-product__item__content">
+                                        <h6 class="title mb-1">Grilled Chicken Platter</h6>
+                                        <p class="tag">Special Meal</p>
+                                    </div>
+                                    <h5 class="price mb-0">$8.50</h5>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="checkout-product__item">
+                                <div class="checkout-product__item__thumb">
+                                    <img src="assets/images/thumbs/category/fd-5.png" alt="">
+                                </div>
+                                <div class="checkout-product__item__right">
+                                    <div class="checkout-product__item__content">
+                                        <h6 class="title mb-1">Spicy Chicken Wings (6 pcs)</h6>
+                                        <p class="tag">Snacks</p>
+                                    </div>
+                                    <h5 class="price mb-0">$5.99</h5>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="checkout-product__item">
+                                <div class="checkout-product__item__thumb">
+                                    <img src="assets/images/thumbs/category/fd-1.png" alt="">
+                                </div>
+                                <div class="checkout-product__item__right">
+                                    <div class="checkout-product__item__content">
+                                        <h6 class="title mb-1">Creamy Pasta Alfredo</h6>
+                                        <p class="tag">Pasta</p>
+                                    </div>
+                                    <h5 class="price mb-0">$7.50</h5>
+                                </div>
+                            </div>
+
+                            <!-- Item 6 -->
+                            <div class="checkout-product__item">
+                                <div class="checkout-product__item__thumb">
+                                    <img src="assets/images/thumbs/category/fd-2.png" alt="">
+                                </div>
+                                <div class="checkout-product__item__right">
+                                    <div class="checkout-product__item__content">
+                                        <h6 class="title mb-1">Chicken Shawarma Wrap</h6>
+                                        <p class="tag">Wrap</p>
+                                    </div>
+                                    <h5 class="price mb-0">$3.99</h5>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <ul class="checkout-information__list">
+                            <li>
+                                <span>Subtotal</span> <span>$37.46</span>
+                            </li>
+                            <li class="shipping-charge-container">
+                                <span>Delivery fee</span> <span class="amount">$1.50</span>
+                            </li>
+                        </ul>
+                        <div class="checkout-information__total total-container">
+                            <span>Total</span> <span data-amount="38.96" class="amount">$38.96</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--============ checkout section end here ============ -->
+
+
+</main>
+
+<!-- Footer -->
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer-area">
+    <div class="pb-60 pt-120">
+        <div class="container">
+            <div class="row justify-content-center gy-5">
+                <div class="col-xl-4 col-sm-6 col-xsm-6">
+                    <div class="footer-item">
+                        <div class="footer-item__logo">
+                            <a href="index.html"> <img src="assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                        <p class="footer-item__desc"> Herbal Shop  brings you tons of products in over 20+ different categories, including men's fashion, women's fashion, baby fashion, and more. </p>
+                        <ul class="social-list">
+                            <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link flex-center"><i class="fab fa-facebook-f"></i></a> </li>
+                            <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link flex-center active"> <i class="fab fa-twitter"></i></a></li>
+                            <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link flex-center"> <i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link flex-center"> <i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6 col-xsm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Userful Link</h5>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Home</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">About Us </a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Contact Us </a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-xsm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Categories</h5>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog </a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog Details </a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Dashboard </a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link"> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-xsm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Contact With Us</h5>
+                        <ul class="footer-contact-menu">
+                            <li class="footer-contact-menu__item"> 
+                                <div class="footer-contact-menu__item-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="footer-contact-menu__item-content">
+                                    <p>15205 North Kierland Blvd.100
+                                      Old City House</p>
+                                </div>
+                            </li>
+                            <li class="footer-contact-menu__item"> 
+                                <div class="footer-contact-menu__item-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="footer-contact-menu__item-content">
+                                    <p>democompany@gmail.com</p>
+                                </div>
+                            </li>
+                            <li class="footer-contact-menu__item"> 
+                                <div class="footer-contact-menu__item-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="footer-contact-menu__item-content">
+                                    <p>123 - 456 - 7890 </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Footer Top End-->
+  
+    <!-- bottom Footer -->
+    <div class="bottom-footer py-3">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-12 text-center">
+                    <div class="bottom-footer-text text-white"> &copy; Copyright 2025. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+  
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+
+ <!-- main js -->
+ <script src="assets/js/main.js"></script>
+</body>
+</html>

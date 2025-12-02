@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title> Html Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontasosome -->
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+  <!--==================== Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+            <div class="offcanvas border-0 offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-header">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-menu align-items-xl-center justify-content-xl-center w-100">
+                        <li class="nav-item d-xl-none">
+                            <div class="dropdown lang-box">
+                                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                                    <span class="thumb">
+                                        <img class="fit-image" src="assets/images/flags/us.png" alt="usa">
+                                    </span>
+                                    <span class="text">English</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="lang-box-item" data-code="en">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/us.png" alt="usa">
+                                            </div>
+                                            <span class="text">Enlish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item selected" data-code="hn">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/bd.png" alt="bd">
+                                            </div>
+                                            <span class="text">Bangla</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sp.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Spanish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sa.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Arabic</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/pak.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Urdu</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/fr.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">French</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog-details.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> Contact </a>
+                        </li>
+
+                        <li class="nav-item d-xl-none d-block">
+                            <a href="login.html" class="btn w-100 btn--md pill btn-outline--base">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-none">
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                Vehicles <span class="nav-item__icon"><i class="las la-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu header-dropdown">
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#"> Car </a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#"> Convertible </a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Electric</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Motorcycle</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#-vehicle_1717237170">Specialty
+                                        Vehicle</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">SUV</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Truck</a>
+                                </li>
+                                <li class="dropdown-menu__list">
+                                    <a class="dropdown-item dropdown-menu__link" href="#">Van</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-right d-none d-xl-flex">
+                <div class="dropdown lang-box">
+                    <button class="lang-box-btn" data-bs-toggle="dropdown">
+                        <span class="thumb">
+                            <img class="fit-image" src="assets/images/thumbs/s-1.jpg" alt="en">
+                        </span>
+                        <span class="text">English</span>
+                        <span class="icon">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="lang-box-item" data-code="en">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-1.jpg" alt="en">
+                                </div>
+                                <span class="text">Enlish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item selected" data-code="hn">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-4.jpg" alt="en">
+                                </div>
+                                <span class="text">Bangla</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-3.jpg" alt="en">
+                                </div>
+                                <span class="text">Spanish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/s-2.jpg" alt="hi">
+                                </div>
+                                <span class="text">Hindi</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <a href="" class="cart-action-btn">
+                    <i class="las la-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="btn btn--base btn--md">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<!--================ cart-sidebar start here ================ -->
+<div class="cart__sidebar">
+    <div class="cart__header">
+        <div>
+            <h6 class="title mb-0">
+                <!-- Cart Icon + Total Items -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M19.875 9.375H4.125C3.50368 9.375 3 9.87868 3 10.5C3 11.1213 3.50368 11.625 4.125 11.625H19.875C20.4963 11.625 21 11.1213 21 10.5C21 9.87868 20.4963 9.375 19.875 9.375Z"
+                        fill="currentColor" />
+                    <path
+                        d="M7.96101 8.62501L9.78876 6.60488C9.94851 6.42638 10.0288 6.20513 10.0288 5.98388C10.0288 5.73188 9.92413 5.48288 9.72426 5.30138C9.34626 4.96013 8.76201 4.98788 8.42076 5.36588L5.47363 8.62501H7.96138H7.96101Z"
+                        fill="currentColor" />
+                    <path
+                        d="M16.0386 8.62501H18.5263L15.5792 5.36588C15.2379 4.98788 14.6537 4.96013 14.2757 5.30138C14.0758 5.48288 13.9712 5.73188 13.9712 5.98388C13.9712 6.20513 14.0511 6.42676 14.2112 6.60488L16.0386 8.62501Z"
+                        fill="currentColor" />
+                    <path
+                        d="M4.57422 12.375L6.12784 18.1147C6.34834 18.9304 7.09272 19.5 7.93759 19.5H16.0627C16.9076 19.5 17.652 18.9304 17.8725 18.1147L19.4261 12.375H4.57422Z"
+                        fill="currentColor" />
+                </svg>
+                04 items
+            </h6>
+            <a href="cart.html" class="cart__page__link">Show in Cart Page</a>
+        </div>
+        <div>
+            <button class="sidebar-close-btn"><i class="las la-times"></i></button>
+        </div>
+    </div>
+
+    <div class="cart__body">
+
+        <!-- Item 1 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-1.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Chicken Fried Rice
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$6.99</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Main Dish</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="2" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-2.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Beef Burger Deluxe
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$4.49</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Fast Food</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="1" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-3.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Spicy Chicken Wings (6 pcs)
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$5.99</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Snacks</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="1" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="cart__item">
+            <button type="button" class="cart__item__remove"><i class="las la-trash-alt"></i></button>
+            <div class="cart__item__img">
+                <a href="#">
+                    <img src="assets/images/thumbs/category/fd-4.png" alt="">
+                </a>
+            </div>
+            <div class="cart__item__content">
+                <h6 class="cart__item__title">
+                    <a href="#" class="line-limitation-2">
+                        Chicken Shawarma Wrap
+                    </a>
+                </h6>
+                <div class="cart__item__rating-price">
+                    <p class="product-short-info">No tax applicable</p>
+                    <span class="cart__item__price">$3.99</span>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-bottom__content">
+                        <p class="product-short-info">Wrap</p>
+                    </div>
+                    <div class="qty-container">
+                        <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                        <input type="text" name="qty" value="1" class="input-qty">
+                        <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-bottom">
+        <div class="subtotal-price">
+            <span class="subtotal-title">Total</span>
+            <span class="subtotal-price">$27.46</span>
+        </div>
+        <a href="checkout.html" class="checkout-btn">
+            Checkout <i class="las la-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<!--================ cart-sidebar end here ================ -->
+<main>
+    <!-- ==================== Breadcrumb Start Here ==================== -->
+<section class="breadcrumb bg-img" data-background-image="assets/images/thumbs/bread-1.jpg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="breadcrumb__wrapper">
+                    <h2 class="breadcrumb__title"> Dashboard</h2>
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link"> Home</a> </li>
+                        <li class="breadcrumb__item"><i class="fas fa-angle-right"></i></li>
+                        <li class="breadcrumb__item"> <span class="breadcrumb__item-text"> Dashboard </span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== Breadcrumb End Here ==================== -->
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    <!-- ====================== Sidebar menu Start ========================= -->
+<div class="sidebar-menu">
+    <div class="sidebar-menu__inner">
+        <span class="sidebar-menu__close d-xl-none d-block"><i class="fas fa-times"></i></span>
+        <!-- ========= Sidebar Menu Start ================ -->
+        <ul class="sidebar-menu-list mt-0">
+            <li class="sidebar-menu-list__item"> Dashboard </li>
+            <li class="sidebar-menu-list__item">
+                <a href="dashboard.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="text"> Dashboard </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="profile.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-regular fa-circle-user"></i></span>
+                    <span class="text"> My Profile </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item"> Orders </li>
+            <li class="sidebar-menu-list__item">
+                <a href="order.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span class="text"> Orders </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="track.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    <span class="text"> Delivery Tracking </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="return.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+                    <span class="text"> Returns </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="payment-log.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-regular fa-credit-card"></i></span>
+                    <span class="text"> Payment Log </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item"> Analytics & Feedback </li>
+            <li class="sidebar-menu-list__item">
+                <a href="analytics.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="text"> Analytics </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="reviews.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-regular fa-star"></i></span>
+                    <span class="text"> Customer Reviews </span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" class="logout" data-bs-toggle="modal" data-bs-target="#exampleModalOne">
+            <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+            <span class="text"> Log Out </span>
+        </a>
+        <!-- ========= Sidebar Menu End ================ -->
+    </div>
+</div>
+
+<!-- ====================== Sidebar menu End ========================= -->
+                </div>
+                <div class="col-xl-9">
+                    <div class="dashboard-body">
+
+                        <div class="dashboard-topbar">
+                            <h5 class="dashboard-body__title mb-0"> Order Details - #CK-000124 </h5>
+                            <a class="btn btn--base btn--sm" target="_blank" href="#">
+                                <i class="las la-print"></i> Print Invoice
+                            </a>
+                        </div>
+
+                        <div class="row gy-4 mb-4">
+                            <!-- Order Overview -->
+                            <div class="col-md-6 col-xxl-4">
+                                <div class="card custom--card order-details--card h-100">
+                                    <div class="card-header">
+                                        <h6 class="card-title mb-0">Order Overview</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group--custom">
+                                            <li class="list-group-item">
+                                                <span class="label">Order No</span>
+                                                <span class="value">#CK-000124</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Order Date</span>
+                                                <span class="value">2025-12-02 06:11 PM</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Payment Method</span>
+                                                <span class="value">Online (Card)</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Order Status</span>
+                                                <span class="badge badge--warning">Preparing</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Payment Status</span>
+                                                <div class="badge badge--success">Paid</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order Summary -->
+                            <div class="col-md-6 col-xxl-4">
+                                <div class="card custom--card order-details--card h-100">
+                                    <div class="card-header">
+                                        <h6 class="card-title mb-0">Order Summary</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group--custom">
+                                            <li class="list-group-item">
+                                                <span class="label">Subtotal</span>
+                                                <span class="value">$32.50 USD</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">(+) Delivery Charge</span>
+                                                <span class="value">$3.00 USD</span>
+                                            </li>
+                                            <li class="list-group-item total">
+                                                <span class="label">Total</span>
+                                                <span class="value">$35.50 USD</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Delivery Information -->
+                            <div class="col-md-12 col-xxl-4">
+                                <div class="card custom--card order-details--card h-100">
+                                    <div class="card-header">
+                                        <h6 class="card-title mb-0">Delivery Information</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group--custom">
+                                            <li class="list-group-item">
+                                                <span class="label">Customer Name</span>
+                                                <span class="value">John Doe</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Phone</span>
+                                                <span class="value">+1 222 555 7788</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Delivery Address</span>
+                                                <span class="value">House #12, Road #4, City Town</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Delivery Type</span>
+                                                <span class="value">Home Delivery</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="label">Estimated Time</span>
+                                                <span class="value">25–30 Minutes</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ordered Foods -->
+                        <div class="table-responsive">
+                            <table class="table table--responsive--lg">
+                                <thead>
+                                    <tr>
+                                        <th> Food Item </th>
+                                        <th> Price </th>
+                                        <th> Quantity </th>
+                                        <th> Total Price </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Item">
+                                            <div class="order-item">
+                                                <img class="order-item__thumb" src="assets/images/thumbs/category/fd-1.png"
+                                                    alt="Burger">
+                                                <div class="order-item__content">
+                                                    <h6 class="order-item__title">Cheese Beef Burger</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-label="Price"> $12.00 USD </td>
+                                        <td data-label="Quantity"> 1 </td>
+                                        <td data-label="Total Price"> $12.00 USD </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Item">
+                                            <div class="order-item">
+                                                <img class="order-item__thumb" src="assets/images/thumbs/category/fd-2.png"
+                                                    alt="Burger">
+                                                <div class="order-item__content">
+                                                    <h6 class="order-item__title">Chicken BBQ Pizza</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-label="Price"> $15.50 USD </td>
+                                        <td data-label="Quantity"> 1 </td>
+                                        <td data-label="Total Price"> $15.50 USD </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Item">
+                                            <div class="order-item">
+                                                <img class="order-item__thumb" src="assets/images/thumbs/category/fd-3.png"
+                                                    alt="Burger">
+                                                <div class="order-item__content">
+                                                    <h6 class="order-item__title">Cold Drink</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-label="Price"> $5.00 USD </td>
+                                        <td data-label="Quantity"> 1 </td>
+                                        <td data-label="Total Price"> $5.00 USD </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+
+<!-- Footer -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+
+ <!-- main js -->
+ <script src="assets/js/main.js"></script>
+</body>
+</html>

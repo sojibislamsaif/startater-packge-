@@ -1,0 +1,179 @@
+/* ================================= Dashboard Fulid Sidebar Css Start =========================== */
+
+  // Sidebar logo Css Start
+  .sidebar-logo {
+    text-align: center;
+    margin: 24px 0;
+
+    @include md-screen {
+      margin-top: 32px;
+    }
+
+    img {
+      max-width: 170px;
+      max-height: 60px;
+    }
+  }
+
+  // Sidebar logo Css End
+
+  .sidebar-menu {
+    background-color: hsl(var(--white));
+    position: sticky;
+    top: 100px;
+    padding: 25px  20px;
+    border-radius: 8px;
+
+    &-list {
+      margin-top: 24px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &__item {
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 0;
+          .sidebar-menu-list__link {
+            border-bottom: 0;
+          }
+        }
+        &.active {
+          >a {
+            background-color: hsl(var(--base));
+            border-radius: 8px;
+            color: hsl(var(--white));
+            padding: 8px 20px;
+            border-bottom:  1px solid transparent;
+          }
+        }
+      }
+
+      &__link {
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        padding: 8px 0px;
+        width: 100%;
+        color: hsl(var(--body-color));
+        font-weight: 600;
+        @include fs-16;
+        border-bottom: 1px solid hsl(var(--black)/.1);
+        &:hover {
+          background-color: hsl(var(--base));
+          color: hsl(var(--white));
+          padding: 8px 20px;
+          border-radius: 8px;
+          border-bottom: 1px solid transparent;
+        }
+
+        &.active {
+          color: hsl(var(--base));
+        }
+
+        .icon {
+          margin-right: 8px;
+          @include fs-15;
+          text-align: center;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .logout {
+    background-color: hsl(var(--danger));
+    color: hsl(var(--white));
+    width: unset;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 20px;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 20px;
+    .icon {
+      margin-right: 8px;
+      @include fs-15;
+      text-align: center;
+      border-radius: 4px;
+    }
+    &:hover {
+      background-color: hsl(var(--danger-d-200));
+      color: hsl(var(--white));
+    }
+  }
+  // Sidebar Menu Start
+  @media (max-width: 1199px) {
+    .sidebar-menu {
+      height: 100vh;
+      background-color: hsl(var(--white));
+      overflow-y: auto;
+      z-index: 999;
+      transition: 0.5s linear;
+      width: 300px;
+      border-radius: 0;
+      position: fixed;
+      left: 0;
+      top: 0;
+      align-items: start;
+      flex-direction: row;
+      padding-top: 40px;
+      &::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: hsl(var(--black) / 0.15);
+      }
+
+      &__inner {
+        width: 100%;
+      }
+
+      //=========== Sidebar Show hide Css Start =======
+      &.show-sidebar {
+        transform: translateX(0);
+      }
+
+      transform: translateX(-100%);
+      z-index: 9992;
+      border-radius: 0;
+
+      &__close {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        color: hsl(var(--text-color));
+        font-size: 1.25rem;
+        transition: 0.2s linear;
+        cursor: pointer;
+        z-index: 9;
+
+        &:active {
+          top: 14px;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: hsl(var(--white));
+          border-color: hsl(var(--white));
+          color: hsl(var(--base));
+        }
+      }
+
+      //=========== Sidebar Show hide Css End =======
+    }
+  }
+
+  // Sidebar Menu End
+  .sidebar-menu-list__link .icon:has(.fa-cart-shopping) {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px hsl(var(--body-color));
+  }
+  .sidebar-menu-list__link:hover .icon:has(.fa-cart-shopping) {
+    -webkit-text-stroke: 1px hsl(var(--white));
+  }
+  .sidebar-menu-list__item.active .sidebar-menu-list__link .icon:has(.fa-cart-shopping) {
+    -webkit-text-stroke: 1px hsl(var(--white));
+  }

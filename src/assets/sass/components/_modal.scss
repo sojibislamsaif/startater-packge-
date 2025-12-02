@@ -1,50 +1,116 @@
 /* ================================= Modal Css Start =========================== */
 .custom--modal {
-  .modal-header {
-    border-bottom: 1px solid hsl(var(--black) / 0.12);
-    padding: 15px;
+  &-two {
+    .modal-header {
+      border-bottom: 0;
+    }
 
-    .btn-close {
-      width: 35px;
-      height: 35px;
-      background-color: hsl(var(--danger));
-      font-size: 1.5625rem; // 25px
-      line-height: 1;
-      border-radius: 4px;
-      transition: 0.2s linear;
-      background-image: none;
-      opacity: 1;
+    .modal-footer {
+      display: block;
+    }
 
-      i {
-        font-size: 1.5625rem; // 25px
-        color: hsl(var(--danger));
-      }
+    .modal-body {
+      .bar {
+        border: 1px solid hsl(var(--black)/.12);
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
 
-      :focus {
-        box-shadow: none;
+        input {
+          border: 0;
+          border-radius: 10px;
+          width: calc(100% - 80px);
+          padding-right: 15px;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .btn--base {
+          width: 80px !important;
+
+          &:hover {
+            background-color: hsl(var(--base-d-100)) !important;
+            color: hsl(var(--white)) !important;
+          }
+        }
       }
     }
   }
 
+  .modal-header {
+    border-bottom: 1px solid hsl(var(--black) / 0.05);
+    padding: 12px 15px;
+    background-color: hsl(var(--base));
+
+    .modal-title {
+      color: hsl(var(--white));
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .btn-close {
+      background: transparent;
+      opacity: 1;
+      color: unset;
+      width: unset;
+      height: unset;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+
+      &:focus {
+        box-shadow: none;
+        outline: 0;
+      }
+
+      .close-icon {
+        color: hsl(var(--white));
+        font-size: 24px;
+        transition: .2s linear;
+
+        &:hover {
+          color: hsl(var(--white));
+        }
+      }
+    }
+
+  }
+
   .modal-content {
     border-radius: 10px !important;
+    border: 0;
   }
 
   .modal-body {
-    padding: 15px;
+    padding: 35px 24px;
+
+    .modal-delete-wrapper {
+      text-align: center;
+
+      .delete-icon {
+        width: 80px;
+        height: 80px;
+        background-color: hsl(var(--section-bg));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(var(--body-color));
+        margin: 0 auto;
+        margin-bottom: 24px;
+        font-size: 30px;
+      }
+    }
+
+    &__desc {
+      font-size: 18px;
+      color: hsl(var(--heading-color));
+    }
   }
 
-  .modal-icon i {
-    font-size: rem(32px);
-    color: hsl(var(--base));
-    border: 3px solid hsl(var(--base));
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
 
   .modal-footer {
     display: flex;
@@ -52,10 +118,17 @@
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    border-top: 1px solid hsl(var(--black) / 0.12);
+    padding: 15px 24px;
+    border-top: 1px solid hsl(var(--black) / 0.05);
     justify-content: flex-end;
   }
+
+
+  .modal-cancel-btn {
+    color: hsl(var(--heading-color));
+    font-weight: 600;
+  }
 }
+
 
 /* ================================= Modal Css End =========================== */

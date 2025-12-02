@@ -1,19 +1,19 @@
 // /* Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
 
 /* ========================= Css Variables Start ======================== */
 :root {
   /* Font Family */
-  --heading-font: 'Ubuntu', sans-serif;
-  --body-font: 'Geologica', sans-serif;
+  --heading-font: "Quicksand", sans-serif;
+  --body-font: "Inter", sans-serif;
 
   /* ========================= Theme Color Start ============================= */
 
   /* Base Color */
-  @include colorVariable(--base, #c37aff, 10);
-
+  
   /* Base Two Color */
-  @include colorVariable(--base-two, #a640fa, 10);
+  @include colorVariable(--base, #fb5629, 10);
+  @include colorVariable(--base-two, #fa8f15, 10);
 
   /* ========================= Theme Color End ============================= */
 
@@ -22,19 +22,20 @@
   @include colorVariable(--white, #ffffff);
 
   // Body Color
-  @include colorVariable(--body-color, #cccccc);
+  @include colorVariable(--body-color, #757575);
 
   // heading-color
-  @include colorVariable(--heading-color, #e2e2e2);
+  @include colorVariable(--heading-color, #0b0909);
 
   // Black Color
   @include colorVariable(--black, #000);
-
+   // Body bg
+  @include colorVariable(--body-bg, #f7f7f7e6);
   //Border Color
   @include colorVariable(--border-color, #e0e0e0);
 
   // Section Background
-  @include colorVariable(--section-bg, #f0f8ff);
+  @include colorVariable(--section-bg, #F7F2E2);
 
   --background-color: var(--black);
 
@@ -61,7 +62,7 @@
   @include colorVariable(--danger, #fb4646, 5);
 
   /* Warning Color */
-  @include colorVariable(--warning, #eb9c00, 5);
+  @include colorVariable(--warning, #FCD500, 5);
 
   /* Info Color */
   @include colorVariable(--info, #00bbff, 5);

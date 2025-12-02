@@ -1,0 +1,195 @@
+/*=========== product category css start here ===========*/
+.seller-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid hsl(var(--black)/.1);
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    &:first-child {
+        padding-top: 0 !important;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0 !important;
+    }
+
+    &__thumb {
+        img {
+            width: 100%;
+            max-width: 45px;
+            height: 100%;
+            max-height: 55px;
+        }
+    }
+
+    &__title {
+        margin-left: 20px;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--body-font);
+        color: hsl(var(--black));
+        margin-bottom: 5px;
+    }
+
+    &__price {
+        color: hsl(var(--black)/.9);
+        font-size: 16px;
+        font-family: var(--body-font);
+        font-weight: 400;
+
+        &-new {
+            color: hsl(var(--base));
+        }
+    }
+}
+
+// ======product sidebar responsive=========
+.product-sidebar-filter {
+    text-align: right;
+    margin-bottom: 30px;
+
+    &__button {
+        background-color: hsl(var(--base));
+        padding: 10px 20px;
+        line-height: 1;
+        display: inline-block;
+        color: hsl(var(--white));
+        font-size: 25px;
+        border-radius: 5px;
+        transition: .2s linear;
+
+        .text {
+            font-size: 20px;
+        }
+    }
+}
+
+// ========left sidebar========
+.left-sidebar {
+    padding: 30px;
+    background-color: hsl(var(--white));
+    border-radius: 5px;
+    position: sticky;
+    top: 100px;
+    z-index: 2;
+
+    @include md-screen {
+        min-width: 320px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99991;
+        border-radius: 0;
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: 50px;
+        transform: translateX(-100%);
+        transition: .2s linear;
+
+        &.show-product-sidebar {
+            transform: translateX(0);
+        }
+    }
+
+}
+
+.sidebar-item {
+    margin-bottom: 32px;
+
+    @include sm-screen {
+        margin-bottom: 24px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        @include md-screen {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: hsl(var(--black));
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: hsl(var(--base));
+        }
+    }
+
+    &__button {
+        margin-top: 20px;
+    }
+
+    &__thumb {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .price-range {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 16px;
+        position: relative;
+
+        .form--control {
+            padding: 7px 10px;
+            border-radius: 8px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 7px;
+            height: 1px;
+            background-color: hsl(var(--black));
+        }
+    }
+
+    .rating-list {
+        margin-left: 10px;
+        gap: 2px;
+    }
+    .form--check {
+        position: relative;
+        margin-bottom: 5px;
+    }
+}
+.sidebar-item .form--check:has(.rating-list) .form-check-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+//   ====product-sidebar close css=======
+.product-sidebar-close {
+    text-align: right;
+    transform: translateY(20px);
+}
+
+/*=========== product category css end here ===========*/

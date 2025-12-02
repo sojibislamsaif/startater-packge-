@@ -1,189 +1,260 @@
 @@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+<main>
+    @@include('../layout/_breadcrumb.html', {
+    "breadcrumbText": "Dashboard"
+    })
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    @@include('../sections/_sidebar-menu.html')
+                </div>
+                <div class="col-xl-9">
+                    <!-- Dashboard Body Start -->
+                    <div class="dashboard-body">
+                        <div class="dashboard-body__bar d-xl-none d-block">
+                            <span class="dashboard-body__bar-icon"><i class="las la-filter"></i></span>
+                        </div>
 
-<!-- ==================== Dashboard Start Here ==================== -->
-<div class="dashboard position-relative">
-    <div class="dashboard__inner flex-wrap">
-        <!-- <div class="dashboard__left"> -->
-        @@include('../sections/_sidebar-menu.html')
-        <!-- </div> -->
-        <div class="dashboard__right">
-            <!-- Dashboard Header Start -->
-            <div class="dashboard-header">
-                <div class="dashboard-header__inner flex-between">
-                    <div class="dashboard-header__left">
-                        <h4 class="dashboard-header__grettings mb-0">Hello! John Doe </h4>
-                    </div>
-                    <div class="dashboard-header__right flex-align">
-                        <a href="#" class="bd-btn support"> <span class="icon"><i class="fas fa-headset"></i></span>
-                            Support</a>
-                        <a href="#" class="bd-btn logout"> <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-                            Logout</a>
-                        <div class="user-info">
-                            <button class="user-info__button flex-align">
-                                <span class="user-info__thumb">
-                                    <img src="assets/images/thumbs/user-profile.png" class="fit-image" alt="">
-                                </span>
-                            </button>
-                            <ul class="user-info-dropdown">
-                                <li class="user-info-dropdown__item"><a class="user-info-dropdown__link" href="#">
-                                        <span class="icon"><i class="far fa-user-circle"></i></span>
-                                        <span class="text">My Profile</span>
-                                    </a></li>
-                                <li class="user-info-dropdown__item"><a class="user-info-dropdown__link" href="#">
-                                        <span class="icon"><i class="fas fa-cog"></i></span>
-                                        <span class="text">Settings</span>
-                                    </a></li>
-                            </ul>
+                        <div class="row gy-3 justify-content-center">
+                            <div class="col-12">
+                                <div class="alert alert--warning mb-4">
+                                    <div class="alert__icon">
+                                        <i class="las la-bell"></i>
+                                    </div>
+                                    <div class="alert__content">
+                                        <h5 class="alert__title">Please Enable Browser Notifications</h5>
+                                        <p class="alert__desc">Allow notifications to get real-time order updates.</p>
+                                    </div>
+                                </div>
+                                <!-- Dashboard Card Start -->
+                                <div class="row gy-4 justify-content-center dashboard-widget-wrapper">
+                                    <!-- Total Orders -->
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
+                                        <div class="dashboard-widget">
+                                            <div class="dashboard-widget__icon flex-center">
+                                                <i class="las la-shopping-basket"></i>
+                                            </div>
+                                            <span class="dashboard-widget__shape">
+                                                <i class="las la-shopping-basket"></i>
+                                            </span>
+                                            <div class="dashboard-widget__content">
+                                                <span class="dashboard-widget__text"> Total Orders </span>
+                                                <h3 class="dashboard-widget__number"> 120 </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Preparing Orders -->
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
+                                        <div class="dashboard-widget">
+                                            <div class="dashboard-widget__icon flex-center">
+                                                <i class="las la-spinner"></i>
+                                            </div>
+                                            <span class="dashboard-widget__shape">
+                                                <i class="las la-spinner"></i>
+                                            </span>
+                                            <div class="dashboard-widget__content">
+                                                <span class="dashboard-widget__text"> Preparing Orders </span>
+                                                <h3 class="dashboard-widget__number"> 35 </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Completed Orders -->
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
+                                        <div class="dashboard-widget">
+                                            <div class="dashboard-widget__icon flex-center">
+                                                <i class="las la-check-circle"></i>
+                                            </div>
+                                            <span class="dashboard-widget__shape">
+                                                <i class="las la-check-circle"></i>
+                                            </span>
+                                            <div class="dashboard-widget__content">
+                                                <span class="dashboard-widget__text"> Completed Orders </span>
+                                                <h3 class="dashboard-widget__number"> 70 </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pending Orders -->
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
+                                        <div class="dashboard-widget">
+                                            <div class="dashboard-widget__icon flex-center">
+                                                <i class="las la-hourglass-half"></i>
+                                            </div>
+                                            <span class="dashboard-widget__shape">
+                                                <i class="las la-hourglass-half"></i>
+                                            </span>
+                                            <div class="dashboard-widget__content">
+                                                <span class="dashboard-widget__text"> Pending Orders </span>
+                                                <h3 class="dashboard-widget__number"> 15 </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Canceled Orders -->
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
+                                        <div class="dashboard-widget">
+                                            <div class="dashboard-widget__icon flex-center">
+                                                <i class="las la-times-circle"></i>
+                                            </div>
+                                            <span class="dashboard-widget__shape">
+                                                <i class="las la-times-circle"></i>
+                                            </span>
+                                            <div class="dashboard-widget__content">
+                                                <span class="dashboard-widget__text"> Canceled Orders </span>
+                                                <h3 class="dashboard-widget__number"> 10 </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Total Revenue -->
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
+                                        <div class="dashboard-widget">
+                                            <div class="dashboard-widget__icon flex-center">
+                                                <i class="las la-dollar-sign"></i>
+                                            </div>
+                                            <span class="dashboard-widget__shape">
+                                                <i class="las la-dollar-sign"></i>
+                                            </span>
+                                            <div class="dashboard-widget__content">
+                                                <span class="dashboard-widget__text"> Total Revenue </span>
+                                                <h3 class="dashboard-widget__number"> $4,500 </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dashboard Card End -->
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 gy-3">
+                            <div class="dashboard-table">
+                                <div class="custom--card card">
+                                    <div class="card-header">
+                                        <h6 class="card-header__title"> Recent Orders </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table--responsive--lg">
+                                            <thead>
+                                                <tr>
+                                                    <th> Dish </th>
+                                                    <th> Order No </th>
+                                                    <th> Qty </th>
+                                                    <th> Order Date </th>
+                                                    <th> Total </th>
+                                                    <th> Payment </th>
+                                                    <th> Status </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Dish">
+                                                        <div class="product">
+                                                            <div class="product__thumb">
+                                                                <img src="assets/images/thumbs/fd-1.png"
+                                                                    alt="Dish Image">
+                                                            </div>
+                                                            <div class="product__content">
+                                                                <p class="product__name"> Chicken Biryani </p>
+                                                                <span class="product__type"> Main Course </span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="Order No"> CK10234 </td>
+                                                    <td data-label="Qty"> 2 </td>
+                                                    <td data-label="Order Date"> 02 Dec 25 </td>
+                                                    <td data-label="Total"> $24.00 </td>
+                                                    <td data-label="Payment"> Cash </td>
+                                                    <td data-label="Status">
+                                                        <span class="badge badge--warning"> Preparing </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Dish">
+                                                        <div class="product">
+                                                            <div class="product__thumb">
+                                                                <img src="assets/images/thumbs/fd-11.png"
+                                                                    alt="Dish Image">
+                                                            </div>
+                                                            <div class="product__content">
+                                                                <p class="product__name"> Veg Burger </p>
+                                                                <span class="product__type"> Fast Food </span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="Order No"> CK10235 </td>
+                                                    <td data-label="Qty"> 1 </td>
+                                                    <td data-label="Order Date"> 02 Dec 25 </td>
+                                                    <td data-label="Total"> $6.00 </td>
+                                                    <td data-label="Payment"> Online </td>
+                                                    <td data-label="Status">
+                                                        <span class="badge badge--success"> Delivered </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Dish">
+                                                        <div class="product">
+                                                            <div class="product__thumb">
+                                                                <img src="assets/images/thumbs/fd-22.png"
+                                                                    alt="Dish Image">
+                                                            </div>
+                                                            <div class="product__content">
+                                                                <p class="product__name"> Paneer Pizza </p>
+                                                                <span class="product__type"> Pizza </span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="Order No"> CK10236 </td>
+                                                    <td data-label="Qty"> 1 </td>
+                                                    <td data-label="Order Date"> 02 Dec 25 </td>
+                                                    <td data-label="Total"> $12.00 </td>
+                                                    <td data-label="Payment"> Online </td>
+                                                    <td data-label="Status">
+                                                        <span class="badge badge--warning"> Preparing </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Dish">
+                                                        <div class="product">
+                                                            <div class="product__thumb">
+                                                                <img src="assets/images/thumbs/fd-11.png"
+                                                                    alt="Dish Image">
+                                                            </div>
+                                                            <div class="product__content">
+                                                                <p class="product__name"> Chocolate Muffin </p>
+                                                                <span class="product__type"> Dessert </span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="Order No"> CK10237 </td>
+                                                    <td data-label="Qty"> 3 </td>
+                                                    <td data-label="Order Date"> 01 Dec 25 </td>
+                                                    <td data-label="Total"> $9.00 </td>
+                                                    <td data-label="Payment"> Cash </td>
+                                                    <td data-label="Status">
+                                                        <span class="badge badge--success"> Delivered </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Dashboard Body End -->
                 </div>
+
             </div>
-            <!-- Dashboard Header End -->
-
-            <!-- Dashboard Body End -->
-            <div class="dashboard-body">
-                <div class="dashboard-body__bar d-lg-none d-block">
-                    <span class="dashboard-body__bar-icon"><i class="fas fa-bars"></i></span>
-                </div>
-
-                <!-- Alert Start -->
-                <div class="alert-item-wrapper">
-                    <div class="alert-item mb-4">
-                        <div class="alert flex-align alert--success" role="alert">
-                            <span class="alert__icon"><i class="lar la-check-circle"></i></span>
-                            <div class="alert__content">
-                                <span class="alert__title fs-16">Payment Success</span>
-                                <p class="alert__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatum, et. Fugit saepe aliquam quisquam consequatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alert-item mb-4">
-                        <div class="alert flex-align alert--danger" role="alert">
-                            <span class="alert__icon"><i class="las la-exclamation-circle"></i></span>
-                            <div class="alert__content">
-                                <span class="alert__title fs-16">Envato Subscription Expired</span>
-                                <p class="alert__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatum, et. Fugit saepe aliquam quisquam consequatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Alert End -->
-
-                <div class="row gy-4 justify-content-center">
-                    <div class="col-12">
-                        <!-- Dashboard Card Start -->
-                        <div class="row gy-4 justify-content-center dashboard-widget-wrapper">
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Envato Purchase</span>
-                                        <h4 class="dashboard-widget__number">07</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Transaction</span>
-                                        <h4 class="dashboard-widget__number">556</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Deposit</span>
-                                        <h4 class="dashboard-widget__number">50</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Marketing Order</span>
-                                        <h4 class="dashboard-widget__number">25</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">invoice</span>
-                                        <h4 class="dashboard-widget__number">52</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Domain</span>
-                                        <h4 class="dashboard-widget__number">65</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Hosting</span>
-                                        <h4 class="dashboard-widget__number">45</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xsm-6">
-                                <div class="dashboard-widget flex-align">
-                                    <div class="dashboard-widget__icon flex-center">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dashboard-widget__content">
-                                        <span class="dashboard-widget__text">Hosting</span>
-                                        <h4 class="dashboard-widget__number">45</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Dashboard Card End -->
-                    </div>
-                </div>
-
-                <div class="dashboard-table mt-5">
-                    <div class="custom--card card">
-                        <div class="card-header">
-                            <h5 class="card-header__title mb-0 text-dark">Dashboard Table</h5>
-                        </div>
-                        <div class="card-body">
-                            @@include('../sections/_table.html')
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Dashboard Body End -->
         </div>
     </div>
-</div>
-<!-- ==================== Dashboard End Here ==================== -->
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+
 <!-- Footer -->
 @@include('../layout/_template-bottom.html')

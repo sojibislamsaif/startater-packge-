@@ -1,92 +1,74 @@
 <!-- ====================== Sidebar menu Start ========================= -->
-<div class="sidebar-menu flex-between">
+<div class="sidebar-menu">
     <div class="sidebar-menu__inner">
-        <span class="sidebar-menu__close d-lg-none d-block"><i class="fas fa-times"></i></span>
-        <!-- Sidebar Logo Start -->
-        <div class="sidebar-logo">
-            <a href="index.html" class="sidebar-logo__link"><img src="assets/images/logo/logo.png" alt=""></a>
-        </div>
-        <!-- Sidebar Logo End -->
-    
+        <span class="sidebar-menu__close d-xl-none d-block"><i class="fas fa-times"></i></span>
         <!-- ========= Sidebar Menu Start ================ -->
-        <ul class="sidebar-menu-list">
-            
-            <li class="menu-title pt-0">MENU</li>
-            
-            <li class="sidebar-menu-list__item active">
-                <a href="#" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fas fa-home"></i></span>
-                    <span class="text">Dashboard</span>
-                </a>
-            </li> 
-            
+        <ul class="sidebar-menu-list mt-0">
+            <li class="sidebar-menu-list__item"> Dashboard </li>
             <li class="sidebar-menu-list__item">
-                <a href="#" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fas fa-file-invoice"></i></span>
-                    <span class="text">About</span>
-                </a>
-            </li>
-    
-            <li class="sidebar-menu-list__item">
-                <a href="#" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fas fa-shopping-cart"></i></span>
-                    <span class="text">Resources</span>
-                </a>
-            </li>
-    
-            <li class="sidebar-menu-list__item has-dropdown">
-                <a href="javascript:void(0)" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fas fa-globe"></i></span>
-                    <span class="text">Language</span>
-                </a>
-                <div class="sidebar-submenu">
-                    <ul class="sidebar-submenu-list">
-                        <li class="sidebar-submenu-list__item">
-                            <a href="#" class="sidebar-submenu-list__link">
-                                <span class="text">Bangla </span>
-                            </a>
-                        </li>
-                        <li class="sidebar-submenu-list__item">
-                            <a href="#" class="sidebar-submenu-list__link">
-                                <span class="text">English </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li> 
-    
-            <hr>
-            <li class="menu-title pt-0">SUPPORT</li>
-            <li class="sidebar-menu-list__item">
-                <a href="#" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fas fa-phone"></i></span>
-                    <span class="text">Contact</span>
+                <a href="dashboard.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="text"> Dashboard </span>
                 </a>
             </li>
             <li class="sidebar-menu-list__item">
-                <a href="#" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-                    <span class="text">Log Out</span>
+                <a href="profile.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-regular fa-circle-user"></i></span>
+                    <span class="text"> My Profile </span>
                 </a>
             </li>
         </ul>
+
+        <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item"> Orders </li>
+            <li class="sidebar-menu-list__item">
+                <a href="order.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span class="text"> Orders </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="track.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    <span class="text"> Delivery Tracking </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="return.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+                    <span class="text"> Returns </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="payment-log.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-regular fa-credit-card"></i></span>
+                    <span class="text"> Payment Log </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item"> Analytics & Feedback </li>
+            <li class="sidebar-menu-list__item">
+                <a href="analytics.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="text"> Analytics </span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list__item">
+                <a href="reviews.html" class="sidebar-menu-list__link">
+                    <span class="icon"><i class="fa-regular fa-star"></i></span>
+                    <span class="text"> Customer Reviews </span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" class="logout" data-bs-toggle="modal" data-bs-target="#exampleModalOne">
+            <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+            <span class="text"> Log Out </span>
+        </a>
         <!-- ========= Sidebar Menu End ================ -->
     </div>
-    <!-- ========= User Profile Info Start ================ -->
-    <div class="user-profile">
-        <div class="user-profile-info">
-            <span class="user-profile-info__icon flex-center">
-                <i class="fas fa-user"></i>
-            </span>
-            <div class="user-profile-info__content">
-                <h6 class="user-profile-info__name">John Doe</h6>
-                <p class="user-profile-info__desc">user@gmail.com</p>
-            </div>
-        </div>
-        <button class="user-profile-dots" type="button">
-            <i class="fas fa-angle-down"></i>
-        </button>
-    </div> 
-    <!-- ========= User Profile Info End ================ -->
 </div>
+
 <!-- ====================== Sidebar menu End ========================= -->

@@ -9,7 +9,7 @@ body {
   font-family: var(--body-font);
   color: hsl(var(--body-color));
   word-break: break-word;
-  background-color: var(--background-color);
+  background-color: hsl(var(--body-bg));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ body {
 
 p {
   @include fs-16;
-  font-weight: 200;
+  font-weight: 400;
   margin: 0;
   color: hsl(var(--body-color));
 }
@@ -92,7 +92,7 @@ h2 {
 }
 
 h3 {
-  font-size: rem(30px);
+  font-size: rem(32px);
 
   @include xl-screen {
     font-size: rem(28px);
@@ -204,11 +204,11 @@ a {
   display: inline-block;
   transition: 0.2s linear;
   text-decoration: none;
-  color: hsl(var(--info));
+  color: hsl(var(--base));
 }
 
 a:hover {
-  color: hsl(var(--base));
+  color: hsl(var(--base-d-200));
 }
 
 img {

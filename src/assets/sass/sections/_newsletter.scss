@@ -1,0 +1,65 @@
+/* newsletter section css start here */
+.newsletter-section {
+    overflow: hidden;
+    background-color: hsl(var(--section-bg));
+    .newsletter-wrapper {
+        position: relative;
+
+        &__left {
+            .shape-one {
+                position: absolute;
+                bottom: -50px;
+                left: 0;
+            }
+
+        }
+
+        &__right {
+            .shape-three {
+                position: absolute;
+                bottom: -60px;
+                right: -80px;
+            }
+        }
+    }
+
+    .newsletter-content {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__subtitle {
+            color: hsl(var(--base));
+            line-height: 22px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-family: var(--heading-font);
+        }
+    }
+}
+
+.newsletter-form {
+    position: relative;
+}
+
+.newsletter-form .thm-btn {
+    top: 50%;
+    position: absolute;
+    right: 8px;
+    transform: translateY(-50%);
+    background: hsl(var(--base));
+    color: hsl(var(--white));
+    padding: 5px 15px;
+    border-radius: 4px;
+    height: calc(100% - 12px);
+}
+
+/* newsletter section css end here */

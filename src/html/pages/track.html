@@ -1,0 +1,84 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+<main>
+    @@include('../layout/_breadcrumb.html', {
+    "breadcrumbText": "Dashboard"
+    })
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    @@include('../sections/_sidebar-menu.html')
+                </div>
+                <div class="col-xl-9">
+                    <!-- Dashboard Body End -->
+                    <div class="dashboard-body">
+                        <div class="dashboard-body__bar d-xl-none d-block">
+                            <span class="dashboard-body__bar-icon"><i class="las la-filter"></i></span>
+                        </div>
+
+            <div class="track-order-wrapper">
+                <div class="top">
+                    <p class="title"> Track Your Order </p>
+                </div>
+                <div class="content">
+                    <form action="#" class="order-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control form--control" autocomplete="off"
+                                placeholder="Enter Your Order Code">
+                            <span class="input-group-text bg--base text-white"> Track Now </span>
+                        </div>
+                    </form>
+                    <ul class="page-list list-two">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <span class="profile-item__title"> Confirmed </span>
+                                <span class="icon">
+                                    <i class="las la-shopping-bag"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <span class="profile-item__title"> On Processing </span>
+                                <span class="icon">
+                                    <i class="las la-sync-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="profile-item__title"> Dispatched </span>
+                                <span class="icon">
+                                    <i class="las la-truck-moving"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="profile-item__title"> Delivered </span>
+                                <span class="icon">
+                                    <i class="las la-hand-holding-heart"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+                    </div>
+                    <!-- Dashboard Body End -->
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+
+<!-- Footer -->
+@@include('../layout/_template-bottom.html')

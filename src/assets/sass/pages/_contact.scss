@@ -8,6 +8,7 @@
     padding: 20px;
     border-radius: 10px;
     height: 100%;
+    align-items: center;
     @include lg-screen {
         flex-direction: column;
     }
@@ -36,9 +37,12 @@
             margin-top: 20px;
         }
     }
+    &__desc {
+        font-size: 14px;
+    }
 
     &__title {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         color: hsl(var(--black));
     }
 }

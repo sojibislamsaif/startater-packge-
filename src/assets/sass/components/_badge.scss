@@ -1,7 +1,7 @@
 /* ================================= Badge Css Start =========================== */
-.custom--badge {
-  font-size: rem(12px);
-  border-radius: 5px;
+.badge {
+  font-size: rem(14px);
+  border-radius: 8px 0;
   padding: 8px 10px;
   font-weight: 500;
   position: relative;
@@ -10,38 +10,38 @@
 
 .badge {
   &--base {
-    background-color: hsl(var(--base) / 0.15) !important;
-    color: hsl(var(--base)) !important;
+    background-color: hsl(var(--base)) !important;
+    color: hsl(var(--white)) !important;
   }
 
   &--primary {
-    background-color: hsl(var(--primary) / 0.15) !important;
-    color: hsl(var(--primary)) !important;
+    background-color: hsl(var(--primary)) !important;
+    color: hsl(var(--white)) !important;
   }
 
   &--secondary {
-    background-color: hsl(var(--secondary) / 0.15) !important;
-    color: hsl(var(--secondary)) !important;
+    background-color: hsl(var(--secondary)) !important;
+    color: hsl(var(--white)) !important;
   }
 
   &--success {
-    background-color: hsl(var(--success) / 0.15) !important;
-    color: hsl(var(--success)) !important;
+    background-color: hsl(var(--success)) !important;
+    color: hsl(var(--white)) !important;
   }
 
   &--danger {
-    background-color: hsl(var(--danger) / 0.15) !important;
-    color: hsl(var(--danger)) !important;
+    background-color: hsl(var(--danger)) !important;
+    color: hsl(var(--white)) !important;
   }
 
   &--warning {
-    background-color: hsl(var(--warning) / 0.15) !important;
-    color: hsl(var(--warning)) !important;
+    background-color: hsl(var(--warning)) !important;
+    color: hsl(var(--white)) !important;
   }
 
   &--info {
-    background-color: hsl(var(--info) / 0.15) !important;
-    color: hsl(var(--info)) !important;
+    background-color: hsl(var(--info)) !important;
+    color: hsl(var(--white)) !important;
   }
 }
 

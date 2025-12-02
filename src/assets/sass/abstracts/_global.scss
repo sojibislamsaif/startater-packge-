@@ -1,57 +1,42 @@
 /* ====================== Section Heading ==================== */
 .section-heading {
   text-align: center;
-  margin-bottom: 80px;
   position: relative;
   z-index: 1;
-
-  @include lg-screen {
-    margin-bottom: 60px;
-  }
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 
   @include md-screen {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   @include sm-screen {
     margin-bottom: 20px;
   }
 
-  &__title {
-    margin-bottom: 55px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
 
     @include sm-screen {
-      margin-bottom: 20px;
+      flex-wrap: wrap;
     }
   }
 
-  position: relative;
-
-  &__section-name {
-    position: absolute;
-    inset-inline: 0;
-    top: -35px;
-    line-height: 0.6;
-    z-index: -1;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: hsl(var(--base));
-    -webkit-text-stroke-width: 1px;
-    opacity: 0.3;
+  &__subtitle {
+    color: hsl(var(--base));
+    line-height: 22px;
+    font-size: 18px;
     font-weight: 700;
-    font-size: clampCal(60px, 140px);
-    animation: section-name-blink 5s linear infinite;
+    margin-bottom: 5px;
+    font-family: var(--heading-font);
+  }
 
-    @include md-screen {
-      top: -55px;
-    }
-
-    @include sm-screen {
-      top: -45px;
-    }
-
-    @include xsm-screen {
-      top: -25px;
-    }
+  &__title {
+    margin-bottom: 0;
   }
 
   &__desc {
@@ -65,6 +50,17 @@
   // Style left
   &.style-left {
     text-align: left;
+    max-width: 500px;
+    margin: unset;
+    margin-bottom: 32px;
+
+    @include md-screen {
+      margin-bottom: 24px;
+    }
+
+    @include sm-screen {
+      margin-bottom: 20px;
+    }
 
     .section-heading {
       &__title {
@@ -80,5 +76,7 @@
     }
   }
 }
-
+.section-heading:has(.section-heading__inner) {
+  max-width: 100%;
+}
 /* ====================== Section Heading End ==================== */

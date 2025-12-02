@@ -1,0 +1,212 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+<main>
+    @@include('../layout/_breadcrumb.html', {
+    "breadcrumbText": "Dashboard"
+    })
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    @@include('../sections/_sidebar-menu.html')
+                </div>
+                <div class="col-xl-9">
+                    <!-- Dashboard Body End -->
+                    <div class="dashboard-body">
+                        <div class="dashboard-body__bar d-xl-none d-block">
+                            <span class="dashboard-body__bar-icon"><i class="las la-filter"></i></span>
+                        </div>
+
+                        <div class="dashboard-topbar">
+                            <h5 class="dashboard-body__title mb-0"> My Orders </h5>
+
+                            <form class="search-form">
+                                <div class="input-group">
+                                    <input value="" type="search" placeholder="Order number"
+                                        class="form-control form--control form-control-sm" name="search"
+                                        autocomplete="off">
+                                    <button type="submit" class="btn btn--base btn-sm">
+                                        <i class="las la-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="dashboard-filter">
+                                <a href="#" class="dashboard-filter__link active">All Orders</a>
+                                <a href="#" class="dashboard-filter__link">Pending</a>
+                                <a href="#" class="dashboard-filter__link">Processing</a>
+                                <a href="#" class="dashboard-filter__link">Preparing</a>
+                                <a href="#" class="dashboard-filter__link">Completed</a>
+                                <a href="#" class="dashboard-filter__link">Cancelled</a>
+                                <a href="#" class="dashboard-filter__link">Unpaid</a>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table--responsive--lg">
+                                <thead>
+                                    <tr>
+                                        <th>Order Number</th>
+                                        <th>Amount</th>
+                                        <th>Payment Method</th>
+                                        <th>Payment Status</th>
+                                        <th>Placed At</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002201</td>
+                                        <td data-label="Amount">$12.50</td>
+                                        <td data-label="Payment Method"><strong class="text--base">PayPal</strong></td>
+                                        <td data-label="Payment Status"><span class="badge badge--danger">Unpaid</span>
+                                        </td>
+                                        <td data-label="Placed At">2025-12-02 02:12 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002200</td>
+                                        <td data-label="Amount">$18.90</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Stripe</strong></td>
+                                        <td data-label="Payment Status"><span class="badge badge--success">Paid</span>
+                                        </td>
+                                        <td data-label="Placed At">2025-12-02 01:55 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002199</td>
+                                        <td data-label="Amount">$9.40</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Cash on
+                                                Delivery</strong></td>
+                                        <td data-label="Payment Status"><span
+                                                class="badge badge--secondary">Pending</span></td>
+                                        <td data-label="Placed At">2025-12-02 01:37 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002198</td>
+                                        <td data-label="Amount">$26.10</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Credit Card</strong>
+                                        </td>
+                                        <td data-label="Payment Status"><span class="badge badge--success">Paid</span>
+                                        </td>
+                                        <td data-label="Placed At">2025-12-02 01:10 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002197</td>
+                                        <td data-label="Amount">$14.70</td>
+                                        <td data-label="Payment Method"><strong class="text--base">PayPal</strong></td>
+                                        <td data-label="Payment Status"><span
+                                                class="badge badge--danger">Refunded</span></td>
+                                        <td data-label="Placed At">2025-12-02 12:55 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002196</td>
+                                        <td data-label="Amount">$11.80</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Cash on
+                                                Delivery</strong></td>
+                                        <td data-label="Payment Status"><span
+                                                class="badge badge--secondary">Pending</span></td>
+                                        <td data-label="Placed At">2025-12-02 12:22 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002195</td>
+                                        <td data-label="Amount">$21.30</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Stripe</strong></td>
+                                        <td data-label="Payment Status"><span class="badge badge--success">Paid</span>
+                                        </td>
+                                        <td data-label="Placed At">2025-12-02 12:05 PM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002194</td>
+                                        <td data-label="Amount">$7.90</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Credit Card</strong>
+                                        </td>
+                                        <td data-label="Payment Status"><span class="badge badge--success">Paid</span>
+                                        </td>
+                                        <td data-label="Placed At">2025-12-02 11:48 AM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002193</td>
+                                        <td data-label="Amount">$23.50</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Cash on
+                                                Delivery</strong></td>
+                                        <td data-label="Payment Status"><span
+                                                class="badge badge--secondary">Pending</span></td>
+                                        <td data-label="Placed At">2025-12-02 11:30 AM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Order Number">CK-002192</td>
+                                        <td data-label="Amount">$10.90</td>
+                                        <td data-label="Payment Method"><strong class="text--base">Stripe</strong></td>
+                                        <td data-label="Payment Status"><span class="badge badge--danger">Unpaid</span>
+                                        </td>
+                                        <td data-label="Placed At">2025-12-02 11:12 AM</td>
+                                        <td data-label="Action">
+                                            <a href="order-details.html" class="btn btn--base btn--sm"><i
+                                                    class="las la-desktop"></i> Details</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Dashboard Body End -->
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+
+<!-- Footer -->
+@@include('../layout/_template-bottom.html')

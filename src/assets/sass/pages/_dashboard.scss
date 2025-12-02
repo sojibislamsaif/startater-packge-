@@ -1,6 +1,6 @@
 /* ================================= Dashboard Css Start =========================== */
 .dashboard {
-  position: relative;
+  background-color: #F5F6FA;
 
   &__right {
     width: 100%;
@@ -95,136 +95,26 @@
     }
   }
 
-  /* User Info Css Start */
-  .user-info {
-    position: relative;
-    text-align: center;
-
-    &__button {
-      position: relative;
-      padding-right: 20px;
-
-      &::before {
-        position: absolute;
-        content: "\f107";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        color: hsl(var(--black) / 0.4);
-        @include fs-14;
-        pointer-events: none;
-      }
-    }
-
-    .user-info-dropdown {
-      border-radius: 4px;
-      overflow: hidden;
-      transition: 0.25s linear;
-      background-color: hsl(var(--white));
-      box-shadow: 0px 5px 25px hsl(var(--black) / 0.1);
-      width: 200px;
-      position: absolute;
-      right: 0;
-      z-index: 9;
-      top: 100%;
-      margin-top: 15px;
-      padding: 15px;
-      transform: scale(0.95);
-      visibility: hidden;
-      opacity: 0;
-
-      &.show {
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1);
-      }
-
-      @include md-screen {
-        transform: unset !important;
-        top: 43px !important;
-      }
-
-      &__item {
-        &:last-child {
-          .user-info-dropdown__link {
-            border-bottom: 0 !important;
-          }
-        }
-      }
-
-      &__link {
-        padding: 8px 16px !important;
-        color: #5d7387 !important;
-        margin-left: 0 !important;
-        width: 100%;
-        font-weight: 600;
-        text-align: left;
-        @include fs-15;
-        border-radius: 5px;
-
-        &.active {
-          background-color: hsl(var(--base));
-        }
-
-        &:hover {
-          background-color: hsl(var(--base) / 0.08);
-          color: hsl(var(--base)) !important;
-        }
-
-        .icon {
-          margin-right: 8px;
-        }
-      }
-    }
-
-    &__thumb {
-      width: 40px;
-      height: 40px;
-      overflow: hidden;
-      border-radius: 5px;
-    }
-
-    &__name {
-      color: hsl(var(--white));
-      margin-left: 10px;
-      @include fs-15;
-    }
-  }
-
-  /* User Info Css End */
 
   // ======================= Dashboard Header End =======================
 
   // ========== Dashboard Body Start ===============
   .dashboard-body {
-    position: relative;
-    padding: 56px;
-    min-height: 100vh;
-
-    @include xxl-screen {
-      padding: 56px 40px;
-    }
-
-    @include xl-screen {
-      padding: 56px 32px;
-    }
-
-    @include lg-screen {
-      padding: 40px 24px;
-    }
-
-    @include sm-screen {
-      padding: 32px 16px;
+    &__title {
+      font-weight: 600;
+      margin-bottom: 16px;
     }
 
     &__bar {
       &-icon {
-        color: hsl(var(--body-color));
-        font-size: 1.5625rem; //25px
-        margin-bottom: 10px;
+        color: hsl(var(--white));
+        margin-bottom: 20px;
         cursor: pointer;
+        background-color: hsl(var(--base));
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 1.5625rem; //25px
+        line-height: 1;
       }
     }
   }
@@ -232,17 +122,18 @@
   // Dashboard Card
   .dashboard-widget {
     padding: 24px;
-    border-radius: 5px;
+    border-radius: 8px;
     position: relative;
     z-index: 1;
     overflow: hidden;
     background-color: hsl(var(--white));
-    box-shadow: 0px 0px 20px hsl(var(--black) / 0.1);
     transition: 0.25s ease-in-out;
+    display: flex;
+    align-items: center;
+    height: 100px;
 
     &:hover {
       transform: translateY(-6px) scale(1.01);
-      box-shadow: 0px 0px 20px hsl(var(--black) / 0.1);
     }
 
     @include xl-screen {
@@ -250,119 +141,548 @@
     }
 
     @include sm-screen {
-      padding: 16px;
+      padding: 12px;
+    }
+
+    &__shape {
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+      font-size: 50px;
+      z-index: -1;
+      opacity: 0.07;
+      line-height: 1;
+      color: hsl(var(--base));
     }
 
     &__icon {
-      width: 50px;
-      height: 50px;
-      background-color: hsl(var(--base) / 0.08);
+      width: 60px;
+      height: 60px;
       color: hsl(var(--base));
-      border-radius: 5px;
-      font-size: 1.5rem;
+      border-radius: 8px;
+      font-size: 40px;
+      background-color: hsl(var(--base)/.1);
+      flex-shrink: 0;
 
-      img {
-        width: 32px;
-      }
-
-      @include msm-screen {
+      @include md-screen {
         width: 40px;
         height: 40px;
-        @include fs-16;
+        font-size: 24px;
       }
     }
 
     &__content {
-      width: calc(100% - 50px);
       padding-left: 16px;
+      width: calc(100% - 60px);
 
-      @include msm-screen {
-        width: calc(100% - 40px);
+      @include md-screen {
         padding-left: 10px;
+        width: calc(100% - 40px);
       }
     }
 
     &__number {
       margin-bottom: 0px;
+      line-height: 1;
     }
 
     &__text {
-      color: hsl(var(--text-color) / 0.7);
-      @include fs-14;
       margin-bottom: 5px;
+      font-weight: 500;
+    }
+  }
+
+}
+
+.dashboard-table {
+  .custom--card {
+    border-radius: 8px;
+    background-color: hsl(var(--white));
+    padding: 18px;
+
+    .card-header {
+      padding: 0;
+      background-color: transparent;
+      border-bottom: 0;
+
+      &__title {
+        margin-bottom: 10px;
+      }
+    }
+
+    .card-body {
+      background-color: hsl(var(--white));
+      padding: 0px;
+      border-radius: 5px;
+    }
+
+  }
+}
+
+.dashboard-filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+
+  &__link {
+    min-width: fit-content;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: hsl(var(--black) / 0.6);
+    background-color: hsl(var(--white));
+    padding: 4.5px 16px;
+    border-radius: 999px;
+
+    &.active {
+      color: hsl(var(--white));
+      border-color: hsl(var(--base));
+      background-color: hsl(var(--base));
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      color: hsl(var(--black));
+      border-color: hsl(var(--black) / 0.5);
+    }
+  }
+}
+
+.dashboard-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  gap: 32px;
+}
+
+//  }
+
+/* User Info Css Start */
+.user-info {
+  position: relative;
+
+  &__button {
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: '\f107';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: hsl(var(--black) / 0.4);
+      @include fs-14;
+      pointer-events: none;
+    }
+  }
+
+  .user-info-dropdown {
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.25s linear;
+    background-color: hsl(var(--white));
+    box-shadow: 0px 5px 25px rgb(0 0 0 / 10%);
+    width: 200px;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    top: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    transform: scale(0.95);
+    visibility: hidden;
+    opacity: 0;
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @include md-screen {
+      transform: unset !important;
+      top: 43px !important;
+    }
+
+    &__item {
+      &:last-child {
+        .user-info-dropdown__link {
+          border-bottom: 0 !important;
+        }
+      }
+    }
+
+    &__link {
+      padding: 8px 16px !important;
+      color: #5d7387 !important;
+      margin-left: 0 !important;
+      width: 100%;
       font-weight: 600;
+      text-align: left;
+      @include fs-15;
+      border-radius: 5px;
+
+      &.active {
+        background-color: hsl(var(--base));
+      }
+
+      &:hover {
+        background-color: hsl(var(--base) / 0.08);
+        color: hsl(var(--base)) !important;
+      }
+
+      .icon {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__thumb {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &__content {
+    width: calc(100% - 40px);
+    margin-left: 10px;
+  }
+
+  &__name {
+    @include fs-18;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+}
+
+.user-info__button:focus-visible {
+  outline: none;
+}
+
+/* User Info Css End */
+.profile-card {
+  background-color: hsl(var(--white));
+  border: 1px solid hsl(var(--black)/.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #0000000D;
+  height: 100%;
+
+  &__top {
+    background-color: hsl(var(--section-bg));
+    padding: 7px 15px;
+  }
+
+  &__title {
+    color: hsl(var(--heading-color));
+    font-weight: 600;
+  }
+
+  &__content {
+    padding: 15px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: -70px;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 80%;
+      background-color: hsl(var(--black)/.1);
+
+      @include sm-screen {
+        right: -25px;
+      }
 
       @include msm-screen {
-        @include fs-13;
+        right: -10px;
       }
+
+      @include xsm-screen {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    .name {
+      color: hsl(var(--heading-color));
+      font-weight: 600;
+      margin-bottom: 5px;
     }
   }
 
-  .dashboard-widget-wrapper div[class*="col"] {
-    &:nth-of-type(7n + 1) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--base) / 0.1);
-          color: hsl(var(--base));
-        }
-      }
-    }
+  &__text {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
 
-    &:nth-of-type(7n + 2) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--violet) / 0.1);
-        }
-      }
-    }
+  &__desc {
+    font-size: 14px;
 
-    &:nth-of-type(7n + 3) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--info) / 0.1);
-          color: hsl(var(--info));
-        }
-      }
-    }
+    a {
+      color: hsl(var(--body-color));
 
-    &:nth-of-type(7n + 4) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--warning) / 0.1);
-          color: hsl(var(--warning));
-        }
-      }
-    }
-
-    &:nth-of-type(7n + 5) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--success) / 0.1);
-          color: hsl(var(--success));
-        }
-      }
-    }
-
-    &:nth-of-type(7n + 6) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--primary) / 0.1);
-          color: hsl(var(--primary));
-        }
-      }
-    }
-
-    &:nth-of-type(7n + 7) {
-      .dashboard-widget {
-        &__icon {
-          background-color: hsl(var(--danger) / 0.1);
-          color: hsl(var(--danger));
-        }
+      &:hover {
+        color: hsl(var(--base));
+        text-decoration: underline;
       }
     }
   }
-
-  //  }
-  // ========== Dashboard Body End ==============
-  /* ================================= Dashboard Css End =========================== */
 }
+
+.profile-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 135px;
+
+  @include sm-screen {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 50px;
+  }
+
+  @include msm-screen {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  @include xsm-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+// ========== Dashboard Body End ==============
+/* ================================= Dashboard Css End =========================== */
+
+.payment-wrapper-details {
+  .payment-details-item {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid hsl(var(--black)/.05);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    &__icon {
+      font-size: 20px;
+      width: 24px;
+      color: #ACACAC;
+    }
+
+    &__content {
+      width: calc(100% - 24px);
+    }
+
+    &__name {
+      color: hsl(var(--heading-color));
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+/*=============== cancellation wrapper css start here ===============*/
+.cancellation-wrapper {
+  background-color: hsl(var(--white));
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #0000000D;
+  border: 1px solid hsl(var(--black)/.1);
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: hsl(var(--heading-color));
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 600;
+
+    .number {
+      font-weight: 400;
+    }
+  }
+
+  &__top {
+    padding: 8px 16px;
+    border-bottom: 1px solid hsl(var(--black)/.05);
+  }
+
+  .cancellation-item {
+    padding: 16px;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+
+    @include xl-screen {
+      gap: 70px;
+    }
+
+    @include md-screen {
+      gap: 40px;
+    }
+
+    @include sm-screen {
+      gap: 20px;
+    }
+
+    @include msm-screen {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: 290px;
+
+      @include md-screen {
+        width: 250px;
+      }
+
+      @include msm-screen {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 14px;
+      color: hsl(var(--heading-color));
+      font-weight: 400;
+
+      .number {
+        font-weight: 500;
+      }
+    }
+
+    &__right {
+      width: calc(100% - 290px);
+      align-items: center;
+      gap: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(65px, auto));
+
+      @include md-screen {
+        gap: 40px;
+        width: calc(100% - 250px);
+      }
+
+      @include md-screen {
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+      }
+
+      @include msm-screen {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.review-btn {
+  border: 1px solid hsl(var(--black)/.1);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 7px;
+  transition: .2s linear;
+  color: hsl(var(--body-color));
+
+  &:hover {
+    background-color: hsl(var(--base)/.03);
+  }
+}
+
+// product review wrapper css start here 
+.product-review-wrapper {
+  .title {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  &__top {
+    .review-rating-list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &__item {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 24px;
+  }
+
+  .quality-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &__link {
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(var(--body-color));
+      padding: 9px 12px;
+      border-radius: 40px;
+      border: 1px solid hsl(var(--black) / 0.1);
+      line-height: 1;
+      transition: .2s linear;
+
+      &:hover {
+        background-color: hsl(var(--base));
+        color: hsl(var(--white));
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 24px;
+  }
+}
+
+/*=============== cancellation wrapper css end here ===============*/

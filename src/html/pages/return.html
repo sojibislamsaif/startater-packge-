@@ -1,0 +1,180 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+<main>
+    @@include('../layout/_breadcrumb.html', {
+    "breadcrumbText": "Dashboard"
+    })
+    <!-- ==================== Dashboard Start Here ==================== -->
+    <div class="dashboard my-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ">
+                    @@include('../sections/_sidebar-menu.html')
+                </div>
+
+                <div class="col-xl-9">
+                    <!-- Dashboard Body End -->
+                    <div class="dashboard-body">
+                        <div class="dashboard-body__bar d-xl-none d-block">
+                            <span class="dashboard-body__bar-icon"><i class="las la-filter"></i></span>
+                        </div>
+                        <h5 class="dashboard-body__title"> Order Returns </h5>
+
+                        <table class="table table--responsive--lg">
+                            <thead>
+                                <tr>
+                                    <th> Item </th>
+                                    <th> Order ID </th>
+                                    <th> Qty </th>
+                                    <th> Ordered On </th>
+                                    <th> Total </th>
+                                    <th> Payment </th>
+                                    <th> Action </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- ITEM 01 -->
+                                <tr>
+                                    <td data-label="Item">
+                                        <div class="product">
+                                            <div class="product__thumb">
+                                                <img src="assets/images/thumbs/category/fd-2.png" alt="">
+                                            </div>
+                                            <div class="product__content">
+                                                <p class="product__name"> Classic Beef Burger </p>
+                                                <span class="product__type"> Fast Food </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID"> CK-98765 </td>
+                                    <td data-label="Qty"> 01 </td>
+                                    <td data-label="Ordered On"> 10 Dec 2025 </td>
+                                    <td data-label="Total"> $12.00 </td>
+                                    <td data-label="Payment"> Stripe </td>
+                                    <td data-label="Action">
+                                        <div class="d-flex align-items-center justify-content-end flex-wrap gap-2">
+                                            <button class="action-btn" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModalTwo">
+                                                <i class="fas fa-desktop"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- ITEM 02 -->
+                                <tr>
+                                    <td data-label="Item">
+                                        <div class="product">
+                                            <div class="product__thumb">
+                                                <img src="assets/images/thumbs/category/fd-3.png" alt="">
+                                            </div>
+                                            <div class="product__content">
+                                                <p class="product__name"> Pepperoni Pizza </p>
+                                                <span class="product__type"> Italian </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID"> CK-98621 </td>
+                                    <td data-label="Qty"> 02 </td>
+                                    <td data-label="Ordered On"> 11 Dec 2025 </td>
+                                    <td data-label="Total"> $24.00 </td>
+                                    <td data-label="Payment"> Credit Card </td>
+                                    <td data-label="Action">
+                                        <div class="d-flex align-items-center justify-content-end flex-wrap gap-2">
+                                            <button class="action-btn" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModalTwo">
+                                                <i class="fas fa-desktop"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- ITEM 03 -->
+                                <tr>
+                                    <td data-label="Item">
+                                        <div class="product">
+                                            <div class="product__thumb">
+                                                <img src="assets/images/thumbs/category/fd-1.png" alt="">
+                                            </div>
+                                            <div class="product__content">
+                                                <p class="product__name"> Chicken Biryani </p>
+                                                <span class="product__type"> Main Course </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID"> CK-98412 </td>
+                                    <td data-label="Qty"> 01 </td>
+                                    <td data-label="Ordered On"> 09 Dec 2025 </td>
+                                    <td data-label="Total"> $8.50 </td>
+                                    <td data-label="Payment"> Visa </td>
+                                    <td data-label="Action">
+                                        <div class="d-flex align-items-center justify-content-end flex-wrap gap-2">
+                                            <button class="action-btn" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModalTwo">
+                                                <i class="fas fa-desktop"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Dashboard Body End -->
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dashboard End Here ==================== -->
+</main>
+  <!-- Modal -->
+  <div class="modal fade custom--modal" id="exampleModalTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Return Details </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span class="close-icon"> <i class="las la-times-circle"></i> </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="payment-wrapper-details">
+            <div class="payment-details-item">
+                <span class="payment-details-item__icon"> <i class="fa-solid fa-bag-shopping"></i> </span>
+                <div class="payment-details-item__content">
+                    <p class="payment-details-item__name"> Order ID </p>
+                    <span class="payment-details-item__text"> TRK12345 </span>
+                </div>
+            </div>
+            <div class="payment-details-item">
+                <span class="payment-details-item__icon"> <i class="fas fa-coins"></i> </span>
+                <div class="payment-details-item__content">
+                    <p class="payment-details-item__name"> Price </p>
+                    <span class="payment-details-item__text"> $457.00 </span>
+                </div>
+            </div>
+            <div class="payment-details-item">
+                <span class="payment-details-item__icon"> <i class="fa-solid fa-arrows-rotate"></i> </span>
+                <div class="payment-details-item__content">
+                    <p class="payment-details-item__name"> Return On </p>
+                    <span class="payment-details-item__text"> 2023-03-15 05:06 PM ( 1 year ago) </span>
+                </div>
+            </div>
+            <div class="payment-details-item">
+                <span class="payment-details-item__icon"> <i class="fa-solid fa-triangle-exclamation"></i> </span>
+                <div class="payment-details-item__content">
+                    <p class="payment-details-item__name"> Issue </p>
+                    <span class="payment-details-item__text"> Product Damage </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+@@include('../layout/_template-bottom.html')

@@ -88,11 +88,12 @@
   transition: 0.2s linear;
   visibility: hidden;
   opacity: 0;
+  backdrop-filter: blur(5px);
 
   &.show {
     visibility: visible;
     opacity: 1;
-    z-index: 999;
+    z-index: 9999;
   }
 }
 

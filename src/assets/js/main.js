@@ -147,56 +147,269 @@
                 });
             });
         })()
-            // ========================= Select2 Js End ==============
+        // ========================= Select2 Js End ==============
 
-            // ========================= Slick Slider Js Start ==============
-            (function () {
-                const sliderConfig = {
-                    slidesToScroll: 1,
-                    autoplay: false,
-                    autoplaySpeed: 2000,
-                    speed: 1500,
-                    dots: true,
-                    pauseOnHover: true,
-                    arrows: false,
-                    prevArrow:
-                        '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
-                    nextArrow:
-                        '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
-                };
+        // ========================= Slick Slider Js Start ==============
 
-                $('.testimonial-slider').slick({
-                    ...sliderConfig,
-                    slidesToShow: 3,
-                    responsive: [
-                        {
-                            breakpoint: 1199,
-                            settings: {
-                                arrows: false,
-                                slidesToShow: 2,
-                                dots: true,
-                            },
-                        },
-                        {
-                            breakpoint: 991,
-                            settings: {
-                                arrows: false,
-                                slidesToShow: 2,
-                            },
-                        },
-                        {
-                            breakpoint: 464,
-                            settings: {
-                                arrows: false,
-                                slidesToShow: 1,
-                            },
-                        },
-                    ],
-                });
-            })()
+        $('.banner-review-item').slick({
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 1500,
+            dots: true,
+            pauseOnHover: true,
+            arrows: false,
+            prevArrow:
+                '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
+            nextArrow:
+                '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
+
+            slidesToShow: 1,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        dots: true,
+                    },
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 464,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
         // ========================= Slick Slider Js End ===================
 
+        //================== popular slider js start here ==================
+        $(".category-wrapper").slick({
+            dots: false,
+            arrows: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            prevArrow: '<button type="button" class="slick-prev"> <i class="las la-angle-left"></i> </button>',
+            nextArrow: '<button type="button" class="slick-next"> <i class="las la-angle-right"></i> </button>',
+            responsive: [
+                {
+                    breakpoint: 1399,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 4,
+                    },
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 2,
+                    },
+                }
+            ],
+        });
+        //================== popular slider js end here ==================
 
+        // ads js start here 
+        $(".discount-ads__slider").slick({
+            fade: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            pauseOnHover: true,
+            centerMode: false,
+            dots: true,
+            arrows: false,
+            nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+            prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+        // ads js end here 
+
+        //============== product details slider js start here ==============
+        $('.product-details__wrapper').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            fade: true,
+            asNavFor: '.product-details__gallery',
+            prevArrow: '<button type="button" class="slick-prev gig-details-thumb-arrow"><i class="las la-long-arrow-alt-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next gig-details-thumb-arrow"><i class="las la-long-arrow-alt-right"></i></button>',
+        });
+
+        $('.product-details__gallery').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.product-details__wrapper',
+            dots: false,
+            arrows: true,
+
+            focusOnSelect: true,
+            prevArrow: '<button type="button" class="slick-prev gig-details-arrow"><i class="las la-long-arrow-alt-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next gig-details-arrow"><i class="las la-long-arrow-alt-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 676,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 460,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        });
+
+        //============== product details slider js end here ==============
+
+        // ================qty js start here=================== 
+        var buttonPlus = $(".qty-btn-plus");
+        var buttonMinus = $(".qty-btn-minus")
+        var incrementPlus = buttonPlus.click(function () {
+            var $n = $(this)
+                .parent(".qty-container")
+                .find(".input-qty");
+            $n.val(Number($n.val()) + 1);
+        });
+        var incrementMinus = buttonMinus.click(function () {
+            var $n = $(this)
+                .parent(".qty-container")
+                .find(".input-qty");
+            var amount = Number($n.val());
+            if (amount > 0) {
+                $n.val(amount - 1);
+            }
+        });
+
+        //================= qty js end here =============
+
+        // cart sidebar js start here====================
+        $('.cart-action-btn').on('click', function () {
+            $('.cart__sidebar').addClass('show');
+            $('.sidebar-overlay').addClass('show');
+        });
+        $('.sidebar-overlay, .sidebar-close-btn').on('click', function () {
+            $('.cart__sidebar').removeClass('show');
+            $('.sidebar-overlay').removeClass('show');
+        });
+        // cart sidebar js end here ====================
+
+        // review rating and filter js 
+        $('.sort-item__btn').on('click', function () {
+            let menu = $(this).siblings('.menu-content-list');
+            $('.menu-content-list').not(menu).removeClass('show');
+            menu.toggleClass('show');
+        });
+
+        // tab js start here ============================
+        $(function () {
+            function updateBar(navItem) {
+                $('.tab-bar').css({
+                    'width': navItem.outerWidth(),
+                    'left': navItem.position().left
+                });
+            }
+
+            // Update bar on click and on page load if active
+            $('.custom--tab .nav-link').on('click', function () {
+                updateBar($(this));
+            }).filter('.active').each(function () {
+                updateBar($(this));
+            });
+        });
+
+        // tab js end here ===================================
+
+        // testimonial js start here 
+        $(".testimonial-slider").slick({
+            fade: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            pauseOnHover: true,
+            centerMode: false,
+            dots: false,
+            arrows: false,
+            nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+            prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+        // testimonial js end here 
         // ========================= Odometer Counter Up Js End ==========
         $('.counterup-item').each(function () {
             $(this).isInViewport(function (status) {

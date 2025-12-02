@@ -1,0 +1,43 @@
+/*=================== order details css start here ===================*/
+
+.list-group--custom {
+    border-radius: 0px;
+}
+.list-group--custom .list-group-item {
+    padding: 0px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    gap: 8px;
+}
+.list-group--custom .list-group-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.card-body:has(.list-group) {
+    padding: 16px;
+}
+
+.order-item {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.order-item__thumb {
+    width: 40px;
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+.order-item__content {
+    flex-grow: 1;
+}
+.order-item__title {
+    margin-bottom: 0px;
+}
+/*=================== order details css end  here ===================*/
